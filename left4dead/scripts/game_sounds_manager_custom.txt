@@ -1,9 +1,0 @@
-//It's a bitch apocalypse now. bitch!
-"Player.Manager_DLC2SwearCoupDeGrace17"
-{
-	"channel"		"CHAN_VOICE"
-	"volume"		"1.0"
-	"pitch"			"PITCH_NORM"
-	"soundlevel"		"SNDLVL_90B"
-	"wave"			"player\survivor\voice\Manager\DLC2SwearCoupDeGrace17.wav"
-}
