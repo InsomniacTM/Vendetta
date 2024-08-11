@@ -1,0 +1,2045 @@
+//--------------------------------------------------------------------------------------------------------------
+// Custom Response Rule File
+// For Francis by Undergo
+//--------------------------------------------------------------------------------------------------------------
+
+//--------------------------------------------------------------------------------------------------------------
+// DLC1
+//--------------------------------------------------------------------------------------------------------------
+
+criterion "ConceptHey" "Concept" "Hey" required
+Response HeyBiker
+{
+	scene "scenes/Biker/dlc1_c6m1_initialmeeting07.vcd" then Biker BlankScene foo:0 -0.910 //Hey
+	scene "scenes/Biker/dlc1_c6m3_finalechat44.vcd" //What's up
+	scene "scenes/Biker/dlc1_c6m3_finalechat44.vcd" //What's up
+}
+Rule HeyBiker
+{
+	criteria ConceptHey IsBiker
+	Response HeyBiker
+}
+
+criterion "ConceptLillady" "Concept" "Lillady" required
+Response LilladyBiker
+{
+	scene "scenes/Biker/dlc1_c6m1_initialmeeting21.vcd" //I was talking to the lil lady.
+}
+Rule LilladyBiker
+{
+	criteria ConceptLillady IsBiker
+	Response LilladyBiker
+}
+
+criterion "ConceptSuit" "Concept" "Suit" required
+Response SuitBiker
+{
+	scene "scenes/Biker/dlc1_c6m1_initialmeeting23.vcd" //Go to hell suit.
+}
+Rule SuitBiker
+{
+	criteria ConceptSuit IsBiker
+	Response SuitBiker
+}
+
+criterion "ConceptSanders" "Concept" "Sanders" required
+Response SandersBiker
+{
+	scene "scenes/Biker/dlc1_c6m1_initialmeeting24.vcd" //Bite me Colonel Sanders.
+	scene "scenes/Biker/dlc1_c6m1_initialmeeting25.vcd" //Bite me Colonel Sanders.
+}
+Rule SandersBiker
+{
+	criteria ConceptSanders IsBiker
+	Response SandersBiker
+}
+
+criterion "ConceptHeardThat" "Concept" "HeardThat" required
+Response HeardThatBiker
+{
+	scene "scenes/Biker/dlc1_c6m1_initialmeeting29.vcd" //HEY! I heard that!
+}
+Rule HeardThatBiker
+{
+	criteria ConceptHeardThat IsBiker
+	Response HeardThatBiker
+}
+
+criterion "ConceptBrother" "Concept" "Brother" required
+Response BrotherBiker
+{
+	scene "scenes/Biker/dlc1_c6m1_initialmeeting30.vcd" then Biker BlankScene foo:0 -0.7 //Brother
+	scene "scenes/Biker/dlc1_c6m1_initialmeeting34.vcd" then Biker BlankScene foo:0 -0.550 //Brother
+	scene "scenes/Biker/playersuggesthealthbill03.vcd" then Biker BlankScene foo:0 -0.780 //Bro!
+	scene "scenes/Biker/C6DLC3INTRO18.vcd" then Biker Bro foo:0 -0.520 //Hey!
+}
+Rule BrotherBiker
+{
+	criteria ConceptBrother IsBiker
+	Response BrotherBiker
+}
+
+criterion "ConceptYesItIs" "Concept" "YesItIs" required
+Response YesItIsBiker
+{
+	scene "scenes/Biker/dlc1_c6m1_initialmeeting37.vcd" //Oh yeah... uh, yes it is.
+}
+Rule YesItIsBiker
+{
+	criteria ConceptYesItIs IsBiker
+	Response YesItIsBiker
+}
+
+criterion "ConceptAnyVamps" "Concept" "AnyVamps" required
+Response AnyVampsBiker
+{
+	scene "scenes/Biker/dlc1_c6m1_initialmeeting39.vcd" then Biker TheyRvamps foo:0 0.2 //Are any of you vampires?
+}
+Rule AnyVampsBiker
+{
+	criteria ConceptAnyVamps IsBiker
+	Response AnyVampsBiker
+}
+
+criterion "ConceptTheyRvamps" "Concept" "TheyRvamps" required
+Response TheyRvampsBiker
+{
+	scene "scenes/Biker/dlc1_c6m1_initialmeeting41.vcd" then Manager NegVamps foo:0 0.2 //Louis! I told you, they were vampires!
+}
+Rule TheyRvampsBiker
+{
+	criteria ConceptTheyRvamps IsBiker
+	Response TheyRvampsBiker
+}
+
+criterion "ConceptGoddamnVamps" "Concept" "GoddamnVamps" required
+Response GoddamnVampsBiker
+{
+	scene "scenes/Biker/dlc1_c6m1_initialmeeting42.vcd" //I'm not talking to any goddamn vampires.
+}
+Rule GoddamnVampsBiker
+{
+	criteria ConceptGoddamnVamps IsBiker
+	Response GoddamnVampsBiker
+}
+
+criterion "ConceptWhatsYourName" "Concept" "WhatsYourName" required
+Response WhatsYourNameBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_finalechat02.vcd" //What's your name again?
+	scene "scenes/Biker/dlc1_c6m3_finalechat07.vcd" //What's your name again?
+}
+Rule WhatsYourNameBiker
+{
+	criteria ConceptWhatsYourName IsBiker
+	Response WhatsYourNameBiker
+}
+
+criterion "ConceptLouisDeadSoon" "Concept" "LouisDeadSoon" required
+Response LouisDeadSoonBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_finalechat09.vcd" then Manager MeetFrancis foo:0 0.1 //Yeah, that's Louis. I wouldn't get too attached to him, he'll probably be dead soon. I'M Francis.
+}
+Rule LouisDeadSoonBiker
+{
+	criteria ConceptLouisDeadSoon IsBiker
+	Response LouisDeadSoonBiker
+}
+
+criterion "ConceptLikeVests" "Concept" "LikeVests" required
+Response LikeVestsBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_finalechat10.vcd" then Any LikeVestsLaugh foo:0 0.2 //So... you like vests?
+}
+Rule LikeVestsBiker
+{
+	criteria ConceptLikeVests IsBiker
+	Response LikeVestsBiker
+}
+
+criterion "ConceptIKnow" "Concept" "IKnow" required
+Response IKnowBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_finalechat14.vcd" then Biker SoStupid foo:0 -0.901 //I know
+	scene "scenes/Biker/dlc1_c6m3_finalechat15.vcd" then Biker SoStupid foo:0 -0.935 //I know
+	scene "scenes/Biker/dlc1_c6m3_finalechat17.vcd" then Biker BlankScene foo:0 -1.684 //I know
+	scene "scenes/Biker/dlc1_c6m3_finalechat18.vcd" then Biker BlankScene foo:0 -1.697 //I know
+}
+Rule IKnowBiker
+{
+	criteria ConceptIKnow IsBiker
+	Response IKnowBiker
+}
+
+criterion "ConceptSoStupid" "Concept" "SoStupid" required
+Response SoStupidBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_finalechat16.vcd" //It's so stupid.
+}
+Rule SoStupidBiker
+{
+	criteria ConceptSoStupid IsBiker
+	Response SoStupidBiker
+}
+
+criterion "ConceptFancyAss" "Concept" "FancyAss" required
+Response FancyAssBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_finalechat19.vcd" //Hey! Never thought a fancy ass like you would have made it this far.
+}
+Rule FancyAssBiker
+{
+	criteria ConceptFancyAss IsBiker
+	Response FancyAssBiker
+}
+
+criterion "ConceptTurd" "Concept" "Turd" required
+Response TurdBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_finalechat20.vcd" //At least I don't have a turd on my suit.
+}
+Rule TurdBiker
+{
+	criteria ConceptTurd IsBiker
+	Response TurdBiker
+}
+
+criterion "ConceptImCop" "Concept" "ImCop" required
+Response ImCopBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_finalechat21.vcd" then TeenGirl SureYouAre foo:0 .2 //Nah, I'm a cop.
+}
+Rule ImCopBiker
+{
+	criteria ConceptImCop IsBiker
+	Response ImCopBiker
+}
+
+criterion "ConceptIAMCop" "Concept" "IAMCop" required
+Response IAMCopBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_finalechat22.vcd" //No no no, I am a cop.
+	scene "scenes/Biker/dlc1_c6m3_l4d1finalecinematic14.vcd" //I really am a cop you know!
+	scene "scenes/Biker/dlc1_c6m3_l4d1finalecinematic15.vcd" //I really am a cop!
+}
+Rule IAMCopBiker
+{
+	criteria ConceptIAMCop IsBiker
+	Response IAMCopBiker
+}
+
+criterion "ConceptCopyThat" "Concept" "CopyThat" required
+Response CopyThatBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_finalechat23.vcd" //10-4
+	scene "scenes/Biker/dlc1_c6m3_finalechat24.vcd" //10-4
+}
+Rule CopyThatBiker
+{
+	criteria ConceptCopyThat IsBiker
+	Response CopyThatBiker
+}
+
+criterion "ConceptCryBaby" "Concept" "CryBaby" required
+Response CryBabyBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_finalechat25.vcd" //WITCH! Oh sorry, got confused by all your crying.
+	scene "scenes/Biker/dlc1_c6m3_finalechat26.vcd" //Cry your way over to the elevator and then sob your way down to the generator. Fill it up with your tears and we'll take care of the rest.
+}
+Rule CryBabyBiker
+{
+	criteria ConceptCryBaby IsBiker
+	Response CryBabyBiker
+}
+
+criterion "ConceptElevatorCry" "Concept" "ElevatorCry" required
+Response ElevatorCryBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_finalechat26.vcd" //Cry your way over to the elevator and then sob your way down to the generator. Fill it up with your tears and we'll take care of the rest.
+	scene "scenes/Biker/dlc1_c6m3_finalechat27.vcd" //Take the elevator down to the generator. Don't cry on it though, it's electrical.
+	scene "scenes/Biker/dlc1_c6m3_finalechat28.vcd" //Take the elevator down to the generator. Don't cry on it though, it's electrical.
+}
+Rule ElevatorCryBiker
+{
+	criteria ConceptElevatorCry IsBiker
+	Response ElevatorCryBiker
+}
+
+criterion "ConceptWomanOfTaste" "Concept" "WomanOfTaste" required
+Response WomanOfTasteBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_finalechat31.vcd" //What? She's a woman of taste.
+	scene "scenes/Biker/dlc1_c6m3_finalechat32.vcd" //What? Obviously she's a woman of taste.
+}
+Rule WomanOfTasteBiker
+{
+	criteria ConceptWomanOfTaste IsBiker
+	Response WomanOfTasteBiker
+}
+
+criterion "ConceptTakinItSlow" "Concept" "TakinItSlow" required
+Response TakinItSlowBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_finalechat33.vcd" //Takin' it slow, huh? I can respect that.
+}
+Rule TakinItSlowBiker
+{
+	criteria ConceptTakinItSlow IsBiker
+	Response TakinItSlowBiker
+}
+
+criterion "ConceptHandled" "Concept" "Handled" required
+Response HandledBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_finalechat38.vcd" //How she handle?
+}
+Rule HandledBiker
+{
+	criteria ConceptHandled IsBiker
+	Response HandledBiker
+}
+
+criterion "ConceptBikeMan" "Concept" "BikeMan" required
+Response BikeManBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_finalechat39.vcd" //Honestly, I'm more of a bike man myself.
+}
+Rule BikeManBiker
+{
+	criteria ConceptBikeMan IsBiker
+	Response BikeManBiker
+}
+
+criterion "ConceptWhatsUp" "Concept" "WhatsUp" required
+Response WhatsUpBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_finalechat44.vcd" //What's up?
+}
+Rule WhatsUpBiker
+{
+	criteria ConceptWhatsUp IsBiker
+	Response WhatsUpBiker
+}
+
+criterion "ConceptGoodLuck" "Concept" "GoodLuck" required
+Response GoodLuckBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_l4d1finalecinematic06.vcd" //Good luck, my brother!
+}
+Rule GoodLuckBiker
+{
+	criteria ConceptGoodLuck IsBiker
+	Response GoodLuckBiker
+}
+
+criterion "ConceptSrslyWhat" "Concept" "SrslyWhat" required
+Response SrslyWhatBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_l4d1finalecinematic09.vcd" //What? Seriously, what?
+}
+Rule SrslyWhatBiker
+{
+	criteria ConceptSrslyWhat IsBiker
+	Response SrslyWhatBiker
+}
+
+criterion "ConceptHaventHeard" "Concept" "HaventHeard" required
+Response HaventHeardBiker
+{
+	scene "scenes/Biker/dlc1_c6m3_l4d1finalecinematic12.vcd" //No, I haven't heard that one.
+}
+Rule HaventHeardBiker
+{
+	criteria ConceptHaventHeard IsBiker
+	Response HaventHeardBiker
+}
+
+criterion "ConceptHateTanks" "Concept" "HateTanks" required
+Response HateTanksBiker
+{
+	scene "scenes/Biker/dlc1_killfinaltank01.vcd" //I hate tanks.
+	scene "scenes/Biker/dlc1_killfinaltank02.vcd" //I hate tanks.
+	scene "scenes/Biker/dlc1_killfinaltank03.vcd" //I hate tanks.
+}
+Rule HateTanksBiker
+{
+	criteria ConceptHateTanks IsBiker
+	Response HateTanksBiker
+}
+
+criterion "ConceptDoublesSouth" "Concept" "DoublesSouth" required
+Response DoublesSouthBiker
+{
+	scene "scenes/Biker/DLC1_L4D1Tank03.vcd" //TWO TANKS! I HATE THE SOUTH!
+}
+Rule DoublesSouthBiker
+{
+	criteria ConceptDoublesSouth IsBiker
+	Response DoublesSouthBiker
+}
+
+criterion "ConceptFrozenBeard" "Concept" "FrozenBeard" required
+Response FrozenBeardBiker
+{
+	scene "scenes/Biker/DLC1_CommunityL4D101.vcd" then NamVet Hat foo:0 0.2 //Hey Bill, your beards frozen.
+}
+Rule FrozenBeardBiker
+{
+	criteria ConceptFrozenBeard IsBiker
+	Response FrozenBeardBiker
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// DLC2
+//--------------------------------------------------------------------------------------------------------------
+
+criterion "ConceptFarting" "Concept" "Farting" required
+Response FartingBiker
+{
+	scene "scenes/Biker/Generic04.vcd" then TeenGirl FreshAir foo:0 0.2 //Oh hey, that is uncalled for!
+	scene "scenes/Biker/DLC1_C6M1_InitialMeeting27.vcd" then TeenGirl FreshAir foo:0 0.2 //HEY!
+	scene "scenes/Biker/DLC1_C6M1_InitialMeeting28.vcd" then TeenGirl FreshAir foo:0 0.2 //HEY!
+}
+Rule FartingBiker
+{
+	criteria ConceptFarting IsBiker
+	Response FartingBiker
+}
+
+criterion "ConceptAlley" "Concept" "Alley" required
+Response AlleyBiker
+{
+	scene "scenes/Biker/DLC2M1Directional10.vcd" then Manager Alley foo:0 0.2 //Sayyy. An alley!
+}
+Rule AlleyBiker
+{
+	criteria ConceptAlley IsBiker
+	Response AlleyBiker
+}
+
+criterion "ConceptAlleyResp" "Concept" "AlleyResp" required
+Response AlleyRespBiker
+{
+	scene "scenes/Biker/DLC2Alley01.vcd" //Yeah ha ha ha. This the one you wanna die in?
+}
+Rule AlleyRespBiker
+{
+	criteria ConceptAlleyResp IsBiker
+	Response AlleyRespBiker
+}
+
+criterion "ConceptLoveLasagna" "Concept" "LoveLasagna" required
+Response LoveLasagnaBiker
+{
+	scene "scenes/Biker/DLC2BulletinBoard02.vcd" //Unless it's Lasagna Mondays. I love lasagna.
+}
+Rule LoveLasagnaBiker
+{
+	criteria ConceptLoveLasagna IsBiker
+	Response LoveLasagnaBiker
+}
+
+criterion "ConceptHateCanada" "Concept" "HateCanada" required
+Response HateCanadaBiker
+{
+	scene "scenes/Biker/DLC2CanadaHate01.vcd" then TeenGirl CanadiansAreDicks foo:0 0.2 //Oh my god, I hate Canada so much.
+	scene "scenes/Biker/DLC2CanadaHate02.vcd" //If there's one thing I hate more than vampires, it's Canada.
+}
+Rule HateCanadaBiker
+{
+	criteria ConceptHateCanada IsBiker
+	Response HateCanadaBiker
+}
+
+criterion "ConceptForLease" "Concept" "ForLease" required
+Response ForLeaseBiker
+{
+	scene "scenes/Biker/DLC2ForLease01.vcd" then Manager FrancisCantRead foo:0 0.05 //For...lease. Anybody got a pen? I wanna write this number down.
+	scene "scenes/Biker/DLC2ForLease02.vcd" then Manager FrancisCantRead foo:0 0.05 //For...lease.
+}
+Rule ForLeaseBiker
+{
+	criteria ConceptForLease IsBiker
+	Response ForLeaseBiker
+}
+
+criterion "ConceptHersch" "Concept" "Hersch" required
+Response HerschBiker
+{
+	scene "scenes/Biker/DLC2Hersch01.vcd" //I drove for Hersch once. Till some guy laughed at my little brown shorts. And I beat him to death.
+}
+Rule HerschBiker
+{
+	criteria ConceptHersch IsBiker
+	Response HerschBiker
+}
+
+criterion "ConceptPilotStore" "Concept" "PilotStore" required
+Response PilotStoreBiker
+{
+	scene "scenes/Biker/DLC2Intro15.vcd" then TeenGirl IntroCrashR11 foo:0 0.05 //Goddamnit, where'd they buy this helicopter? At the ... uh... um... hold on...
+}
+Rule PilotStoreBiker
+{
+	criteria ConceptPilotStore IsBiker
+	Response PilotStoreBiker
+}
+
+criterion "ConceptCCIntro" "Concept" "CCIntro" required
+Response CCIntroBiker
+{
+	scene "scenes/Biker/DLC2Intro05.vcd" //See? I TOLD ya. Helicopter crashed. We're not saved, we're all gonna die. Pay up.
+	scene "scenes/Biker/DLC2Intro07.vcd" //Hey. Mr possitive. We just CRASHED. You got somethin' positive to say about that?
+	scene "scenes/Biker/DLC2Intro09.vcd" //Hey. Sunshine Beams. We just CRASHED. You got somethin' positive to say about that?
+	scene "scenes/Biker/DLC2Intro13.vcd" //Hey Louis. That fancy college of yours teach ya how to fix a helicopter?
+	scene "scenes/Biker/DLC2Intro19.vcd" //Guys. Everyone. I wanna say something: I. hate. helicopters.
+	scene "scenes/Biker/DLC2Intro20.vcd" //Wow! I love helicopters! I love 'em so much.
+}
+Rule CCIntroBiker
+{
+	criteria ConceptCCIntro IsBiker
+	Response CCIntroBiker
+}
+
+criterion "ConceptTerrific" "Concept" "Terrific" required
+Response TerrificBiker
+{
+	scene "scenes/Biker/DLC2Intro14.vcd" then Biker BlankScene foo:0 -1.202 //Terrific.
+}
+Rule TerrificBiker
+{
+	criteria ConceptTerrific IsBiker
+	Response TerrificBiker
+}
+
+criterion "ConceptSaySmth" "Concept" "SaySmth" required
+Response SaySmthBiker
+{
+	scene "scenes/Biker/DLC2Intro19.vcd" then Biker BlankScene foo:0 -3.702 //Guys. Everyone. I wanna say something
+}
+Rule SaySmthBiker
+{
+	criteria ConceptSaySmth IsBiker
+	Response SaySmthBiker
+}
+
+criterion "ConceptPlan" "Concept" "Plan" required
+Response PlanBiker
+{
+	scene "scenes/Biker/DLC2Intro24.vcd" then Manager Plan foo:0 0.05 //Alright, nobody panic. I have a plan.
+}
+Rule PlanBiker
+{
+	criteria ConceptPlan IsBiker
+	Response PlanBiker
+}
+
+criterion "ConceptPlanRes" "Concept" "PlanRes" required
+Response PlanResBiker
+{
+	scene "scenes/Biker/DLC2Intro25.vcd"  //Well, it's pretty complicated. I don't wanna bore you with a lotta... complex... fractions. But step one is we walk THAT way.
+	scene "scenes/Biker/DLC1_C6M3_FinaleChat34.vcd"  //HEY! All right, while you guys were gone I came up with a plan. To do this quicker, we should break up into teams. Guys, you're shirts. Everybody else, skins. Now let's GO!
+}
+Rule PlanResBiker
+{
+	criteria ConceptPlanRes IsBiker
+	Response PlanResBiker
+}
+
+criterion "ConceptTie" "Concept" "Tie" required
+Response TieBiker
+{
+	scene "scenes/Biker/DLC2Intro26.vcd" then Manager ParadeFrancis foo:0.05 //You still wearin' that tie, Louis? What, you got a meeting? Bah ha ha.
+}
+Rule TieBiker
+{
+	criteria ConceptTie IsBiker
+	Response TieBiker
+}
+
+criterion "ConceptStealTruck" "Concept" "StealTruck" required
+Response StealTruckBiker
+{
+	scene "scenes/Biker/DLC2M2Directional05.vcd" //I got an idea. Let's steal that truck.
+}
+Rule StealTruckBiker
+{
+	criteria ConceptStealTruck IsBiker
+	Response StealTruckBiker
+}
+
+criterion "ConceptPilotKilled" "Concept" "PilotKilled" required
+Response PilotKilledBiker
+{
+	scene "scenes/Biker/DLC2Misc01.vcd" then TeenGirl crashcourse01_path01zresp foo:0 0 //How many pilots HAVE you shot, Zoey? Rough ballpark guess.
+	scene "scenes/Biker/DLC2PilotComment01.vcd" then TeenGirl crashcourse01_path01zresp foo:0 0 //Hey, Zoey, here's the pilot. Case you wanna shoot him again.
+}
+Rule PilotKilledBiker
+{
+	criteria ConceptPilotKilled IsBiker
+	Response PilotKilledBiker
+}
+
+criterion "ConceptRecycle" "Concept" "Recycle" required
+Response RecycleBiker
+{
+	scene "scenes/Biker/DLC2Recycling01.vcd" //Thanks for saving the planet, recyclers. Mission accomplished.
+}
+Rule RecycleBiker
+{
+	criteria ConceptRecycle IsBiker
+	Response RecycleBiker
+}
+
+criterion "ConceptCryingSupplies" "Concept" "CryingSupplies" required
+Response CryingSuppliesBiker
+{
+	scene "scenes/Biker/DLC2Waterworks01.vcd" then NamVet ShutUpFrancis foo:0 .2 //Waterworks. That where you pick up your crying supplies, Bill? Ah ha ha, I'm hilarious.
+	scene "scenes/Biker/C6DLC3INTRO17.vcd" then NamVet CrashCourseR05 foo:0 0.05 //I think those are Bill's tears.
+}
+Rule CryingSuppliesBiker
+{
+	criteria ConceptCryingSupplies IsBiker
+	Response CryingSuppliesBiker
+}
+
+criterion "ConceptDriveShoot" "Concept" "DriveShoot" required
+Response DriveShootBiker
+{
+	scene "scenes/Biker/DLCZombieTruck01.vcd" then TeenGirl crashcourse01_path01zresp foo:0 0.2 //Hey, Zoey-when I drive us outta here, don't SHOOT me, alright?
+	scene "scenes/Biker/DLCZombieTruck02.vcd" then Manager Driving foo:0 0.2 //I'm not driving. I don't wanna get shot.
+}
+Rule DriveShootBiker
+{
+	criteria ConceptDriveShoot IsBiker
+	Response DriveShootBiker
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// DLC3 common
+//--------------------------------------------------------------------------------------------------------------
+
+Response OpenTankDoorBiker
+{ 
+	scene "scenes/Biker/C6DLC3OPENINGDOOR05.vcd"  //Go for the one with the tie.
+	scene "scenes/Biker/C6DLC3OPENINGDOOR06.vcd"  //Go for the one with the tie.
+	scene "scenes/Biker/C6DLC3OPENINGDOOR01.vcd"  //Get ready with some fire.
+	scene "scenes/Biker/C6DLC3OPENINGDOOR02.vcd"  //Alright, alright, I'll be the brave one.
+	scene "scenes/Biker/C6DLC3OPENINGDOOR04.vcd"  //Hey, remember who letcha out of here.
+}
+Rule OpenTankDoorBiker
+{
+	criteria ConceptOpenTankDoor IsBiker
+	Response OpenTankDoorBiker
+}
+
+Response DoNotOpenTankDoorBiker
+{ 
+	scene "scenes/Biker/C6DLC3TANKINTRAINYARD01.vcd"  //Do we really want to open that door? Please say no.
+	scene "scenes/Biker/C6DLC3TANKINTRAINYARD02.vcd"  //Hey, Bill, I think there's a sailboat in the train.
+	scene "scenes/Biker/C6DLC3TANKINTRAINYARD03.vcd"  //Okay. So, I'm not opening the door. You guys work it out and let me know when the door's open.
+	scene "scenes/Biker/C6DLC3TANKINTRAINYARD05.vcd"  //Hey Louis, I don't think it's a tank in there.  It sounds like a puppy.  You should stand closer.
+	scene "scenes/Biker/C6DLC3TANKINTRAINYARD08.vcd"  then Manager InfoRemc7m1_pretank02 foo:0 0.1 //Louis, you gonna open that door or what?
+}
+Rule DoNotOpenTankDoorBiker
+{
+	criteria ConceptDoNotOpenTankDoor IsBiker
+	Response DoNotOpenTankDoorBiker
+}
+
+Response CrowsFlyBiker
+{ 
+	scene "scenes/Biker/C6DLC3GRAVELHILL01.vcd" then TeenGirl CrashCourseR01 foo:0 0.1 //Shut up, you stupid birds
+	scene "scenes/Biker/C6DLC3GRAVELHILL01.vcd" //Shut up, you stupid birds
+	scene "scenes/Biker/C6DLC3GRAVELHILL01.vcd" //Shut up, you stupid birds
+	scene "scenes/Biker/C6DLC3GRAVELHILL02.vcd" //Nice rockpile, birds! Ha ha, hold on, do you hear a zombie?
+}
+Rule CrowsFlyBiker
+{
+	criteria ConceptCrowsFly IsBiker
+	Response CrowsFlyBiker
+}
+
+Response FinalBridgeBiker
+{ 
+	scene "scenes/Biker/C6DLC3BRIDGEAVAILABLE05.vcd" //Get to the bridge! Get to the bridge!
+	scene "scenes/Biker/C6DLC3BRIDGEAVAILABLE06.vcd" //Get to the bridge! Get to the bridge! Come on, get to the bridge!
+}
+Rule FinalBridgeBiker
+{
+	criteria ConceptFinalBridge IsBiker
+	Response FinalBridgeBiker
+}
+
+Response BridgeLeapBiker
+{ 
+	scene "scenes/Biker/C6DLC3JUMPINGOFFBRIDGE01.vcd"  //Jesus, I'm brave.
+	scene "scenes/Biker/C6DLC3JUMPINGOFFBRIDGE02.vcd"  //Guess I better save everybody.
+	scene "scenes/Biker/C6DLC3JUMPINGOFFBRIDGE04.vcd"  //Alright...Guess I better save everybody.
+	scene "scenes/Biker/C6DLC3JUMPINGOFFBRIDGE05.vcd"  //Stay there! God damn it, I don't wanna die...
+	scene "scenes/Biker/C6DLC3JUMPINGOFFBRIDGE06.vcd"  //Stay there! Oh my god, I'm an idiot...
+	scene "scenes/Biker/C6DLC3JUMPINGOFFBRIDGE07.vcd"  //Stay there! Oh god, it shoulda been Louis.
+	scene "scenes/Biker/C6DLC3JUMPINGOFFBRIDGE08.vcd"  //Nobody try to help me! Unless you want!
+	scene "scenes/Biker/C6DLC3JUMPINGOFFBRIDGE09.vcd"  //Don't try to talk me out of this! Anyone?
+	scene "scenes/Biker/C6DLC3JUMPINGOFFBRIDGE10.vcd"  //Don't move! I have a plan!
+}
+Rule BridgeLeapBiker
+{
+	criteria ConceptBridgeLeap IsBiker
+	Response BridgeLeapBiker
+}
+
+Response FinalWeAreSafeLouisBiker
+{
+	scene "scenes/Biker/C6DLC3LOUISDIES03.vcd"  //Louis little buddy, you did it!
+	scene "scenes/Biker/C6DLC3LOUISDIES05.vcd"  //Thanks Louis!
+}
+Rule FinalWeAreSafeLouisBiker
+{
+	criteria FinalWeAreSafeLouis IsBiker
+	Response FinalWeAreSafeLouisBiker
+}
+
+Response FinalWeAreSafeBillBiker
+{
+	scene "scenes/Biker/C6DLC3BILLDIES07.vcd"  //Bill, you did it, buddy! You really did it!
+	scene "scenes/Biker/C6DLC3BILLDIES06.vcd"  //Thanks Bill! I owe you one... You old bastard!
+}
+Rule FinalWeAreSafeBillBiker
+{
+	criteria FinalWeAreSafeBill IsBiker
+	Response FinalWeAreSafeBillBiker
+}
+
+Response FinalWeAreSafeZoeyBiker
+{
+	scene "scenes/Biker/C6DLC3BILLDIES05.vcd"  //We'r safe, ha-ha, we'r safe!
+}
+Rule FinalWeAreSafeZoeyBiker
+{
+	criteria FinalWeAreSafeZoey IsBiker
+	Response FinalWeAreSafeZoeyBiker
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// DLC3 miscellaneous
+//--------------------------------------------------------------------------------------------------------------
+
+criterion "ConceptGoTie" "Concept" "GoTie" required
+Response GoTieBiker
+{ 
+	scene "scenes/Biker/C6DLC3OPENINGDOOR05.vcd"  //Go for the one with the tie.
+	scene "scenes/Biker/C6DLC3OPENINGDOOR06.vcd"  //Go for the one with the tie.
+}
+Rule GoTieBiker
+{
+	criteria ConceptGoTie IsBiker
+	Response GoTieBiker
+}
+
+criterion "ConceptSurpriced" "Concept" "Surpriced" required
+Response SurpricedBiker
+{
+	scene "scenes/Biker/C6DLC3FIRSTSAFEROOM02.vcd" //Whoa. How'd you do that?
+}
+Rule SurpricedBiker
+{
+	criteria ConceptSurpriced IsBiker
+	Response SurpricedBiker
+}
+
+criterion "ConceptSmellsBeard" "Concept" "SmellsBeard" required
+Response SmellsBeardBiker
+{
+	scene "scenes/Biker/C6DLC3INTANKTRAINCAR03.vcd" //God. Smells like Bill's beard in here
+}
+Rule SmellsBeardBiker
+{
+	criteria ConceptSmellsBeard IsBiker
+	Response SmellsBeardBiker
+}
+
+criterion "ConceptSeeBoats" "Concept" "SeeBoats" required
+Response SeeBoatsBiker
+{
+	scene "scenes/Biker/c6dlc3otherboats05.vcd" then NamVet NegNo foo:0 0 //That boat?
+	scene "scenes/Biker/c6dlc3otherboats05.vcd" then Manager Uhuh foo:0 0 //That boat?
+	scene "scenes/Biker/c6dlc3otherboats10.vcd" //Boat!
+	scene "scenes/Biker/c6dlc3otherboats10.vcd" //Boat!
+	scene "scenes/Biker/c6dlc3otherboats10.vcd" //Boat!
+	scene "scenes/Biker/c6dlc3otherboats11.vcd" then Namvet ShutUpFrancis foo:0 0 //Boat! Hop in, let's get outta here!
+}
+Rule SeeBoatsBiker
+{
+	criteria ConceptSeeBoats IsBiker
+	Response SeeBoatsBiker
+}
+
+criterion "ConceptFoundOne" "Concept" "FoundOne" required
+Response FoundOneBiker
+{
+	scene "scenes/Biker/C6DLC3INTRO09.vcd" //Found one.
+	scene "scenes/Biker/C6DLC3INTRO10.vcd" //Found one.
+	scene "scenes/Biker/C6DLC3INTRO11.vcd" //Hey, found one.
+	scene "scenes/Biker/C6DLC3INTRO12.vcd" //Found one.
+}
+Rule FoundOneBiker
+{
+	criteria ConceptFoundOne IsBiker
+	Response FoundOneBiker
+}
+
+criterion "ConceptZoeyPissed" "Concept" "ZoeyPissed" required
+Response ZoeyPissedBiker
+{
+	scene "scenes/Biker/C6DLC3INTRO14.vcd" //Man, Zoey is pissed.
+}
+Rule ZoeyPissedBiker
+{
+	criteria ConceptZoeyPissed IsBiker
+	Response ZoeyPissedBiker
+}
+
+criterion "ConceptCaptain" "Concept" "Captain" required
+Response CaptainBiker
+{
+	scene "scenes/Biker/C6DLC3INTRO25.vcd" //Aye, Aye Captain!
+}
+Rule CaptainBiker
+{
+	criteria ConceptCaptain IsBiker
+	Response CaptainBiker
+}
+
+criterion "ConceptPredictable" "Concept" "Predictable" required
+Response PredictableBiker
+{
+	scene "scenes/Biker/C6DLC3LOUISDIES01.vcd" //I could have predicted that.
+}
+Rule PredictableBiker
+{
+	criteria ConceptPredictable IsBiker
+	Response PredictableBiker
+}
+
+criterion "ConceptSerialKiller" "Concept" "SerialKiller" required
+Response SerialKillerBiker
+{
+	scene "scenes/Biker/C6DLC3SECONDSAFEROOM26.vcd" //I mean, I'd like to hear your reasons why Louis isn't some sort of lunatic. For all we know, he's a serial killer.
+}
+Rule SerialKillerBiker
+{
+	criteria ConceptSerialKiller IsBiker
+	Response SerialKillerBiker
+}
+
+criterion "ConceptPuppy" "Concept" "Puppy" required
+Response PuppyBiker
+{
+	scene "scenes/Biker/C6DLC3TANKINTRAINYARD05.vcd" then Manager InfoRemc7m1_pretank02 foo:0 0.2 //Hey Louis, I don't think it's a tank in there.  It sounds like a puppy.  You should stand closer.
+	scene "scenes/Biker/C6DLC3TANKINTRAINYARD06.vcd" then Manager InfoRemc7m1_pretank02 foo:0 0.2 //Hey Louis, I think there's a puppy in there.  You should let it out.
+}
+Rule PuppyBiker
+{
+	criteria ConceptPuppy IsBiker
+	Response PuppyBiker
+}
+
+criterion "ConceptDone" "Concept" "Done" required
+Response DoneBiker
+{
+	scene "scenes/Biker/C6DLC3FIRSTEVENTOVER01.vcd" //Okay, its done let's go!
+}
+Rule DoneBiker
+{
+	criteria ConceptDone IsBiker
+	Response DoneBiker
+}
+
+criterion "ConceptBullShit" "Concept" "BullShit" required
+Response BullShitBiker
+{
+	scene "scenes/Biker/C6DLC3FIRSTSAFEROOM03.vcd" then Biker BlankScene foo:0 -1 //BullShit
+}
+Rule BullShitBiker
+{
+	criteria ConceptBullShit IsBiker
+	Response BullShitBiker
+}
+
+criterion "ConceptHolyShit" "Concept" "HolyShit" required
+Response HolyShitBiker
+{
+	scene "scenes/Biker/C6DLC3INTRO08.vcd" then Biker BlankScene foo:0 -1.4 //Holy shit
+}
+Rule HolyShitBiker
+{
+	criteria ConceptHolyShit IsBiker
+	Response HolyShitBiker
+}
+
+criterion "ConceptNerd" "Concept" "Nerd" required
+Response NerdBiker
+{
+	scene "scenes/Biker/C6DLC3SECONDSAFEROOM07.vcd"  //Nerd.
+}
+Rule NerdBiker
+{
+	criteria ConceptNerd IsBiker
+	Response NerdBiker
+}
+
+criterion "ConceptCaptainBill" "Concept" "CaptainBill" required
+Response CaptainBillBiker
+{
+	scene "scenes/Biker/C6DLC3SEEINGBIGSHIP01.vcd" then Biker BlankScene foo:0 -1.610 //Yo, Captain Bill
+}
+Rule CaptainBillBiker
+{
+	criteria ConceptCaptainBill IsBiker
+	Response CaptainBillBiker
+}
+
+criterion "ConceptBarn" "Concept" "Barn" required
+Response BarnBiker
+{
+	scene "scenes/Biker/Closethedoor04.vcd" then Biker BlankScene foo:0 -1.590 //You born in a barn?
+}
+Rule BarnBiker
+{
+	criteria ConceptBarn IsBiker
+	Response BarnBiker
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// MAIN responses
+//--------------------------------------------------------------------------------------------------------------
+
+Criterion "ConceptPlayerSeeDeadPlayers" "Concept" "PlayerSeeDeadPlayers" required
+Response PlayerSeeDeadPlayersBillBiker
+{ 
+	scene "scenes/Biker/C6DLC3BILLDIES01.vcd"  //Bill! It should have been Louis! It should have been Louis!
+	scene "scenes/Biker/C6DLC3ZOEYDIES01.vcd"  //Noooo! You monsters! Take Louis instead!
+	scene "scenes/Biker/GoingToDieLight16.vcd"  //Killed by vampires. What a goddamn disgrace.
+}
+Rule PlayerSeeDeadPlayersBillBiker
+{
+	criteria ConceptPlayerSeeDeadPlayers IsBiker SubjectIsNamvet
+	Response PlayerSeeDeadPlayersBillBiker
+}
+
+Response PlayerSeeDeadPlayersLouisBiker
+{ 
+	scene "scenes/Biker/C6DLC3LOUISDIES01.vcd"  //I could have predicted that.
+	scene "scenes/Biker/C6DLC3LOUISDIES03.vcd"  //Louis little buddy, you did it!
+	scene "scenes/Biker/GoingToDieLight16.vcd"  //Killed by vampires. What a goddamn disgrace.
+}
+Rule PlayerSeeDeadPlayersLouisBiker
+{
+	criteria ConceptPlayerSeeDeadPlayers IsBiker SubjectIsManager
+	Response PlayerSeeDeadPlayersLouisBiker
+}
+
+Response PlayerSeeDeadPlayersZoeyBiker
+{ 
+	scene "scenes/Biker/C6DLC3ZOEYDIES01.vcd"  //Noooo! You monsters! Take Louis instead!
+}
+Rule PlayerSeeDeadPlayersZoeyBiker
+{
+	criteria ConceptPlayerSeeDeadPlayers IsBiker SubjectIsTeengirl
+	Response PlayerSeeDeadPlayersZoeyBiker
+}
+
+Criterion "ConceptHealUp" "Concept" "HealUp" required
+Response HealUpBillBiker
+{ 
+	scene "scenes/Biker/PlayerSuggestHealthBill01.vcd"  //Old man - use your health kit.
+	scene "scenes/Biker/PlayerSuggestHealthBill02.vcd"  //Bill, man, heal up
+}
+Rule HealUpBillBiker
+{
+	criteria ConceptHealUp IsBiker SubjectIsNamVet
+	Response HealUpBillBiker
+}
+
+Response HealUpLouisBiker
+{ 
+	scene "scenes/Biker/PlayerSuggestHealthBill03.vcd"   //Bro, heal up.
+	scene "scenes/Biker/PlayerSuggestHealthLouis01.vcd"  //Hey Louie, use your first aid kit.
+	scene "scenes/Biker/PlayerSuggestHealthLouis02.vcd"  //Louis, you gotta heal up, man.
+	scene "scenes/Biker/PlayerSuggestHealthLouis03.vcd"  //Louis, heal fer chrissake.
+}
+Rule HealUpLouisBiker
+{
+	criteria ConceptHealUp IsBiker SubjectIsManager
+	Response HealUpLouisBiker
+}
+
+Response HealUpZoeyBiker
+{ 
+	scene "scenes/Biker/PlayerSuggestHealthZoey02.vcd"  //Zoey darlin', heal up.
+}
+Rule HealUpZoeyBiker
+{
+	criteria ConceptHealUp IsBiker SubjectIsTeengirl
+	Response HealUpZoeyBiker
+}
+
+Criterion "ConceptFinalTruckEscape" "Concept" "FinalTruckEscape" required
+Response FinalTruckEscapeBiker
+{
+	scene "scenes/Biker/DLC2M2Directional04.vcd"  //Let's get in that truck, step on the gas, and not stop till we see the army.
+	scene "scenes/Biker/DLC2M2Directional05.vcd"  //I got an idea. Let's steal that truck. 
+	scene "scenes/Biker/Arrivetruckinitial01.vcd"  //That's the last truck out of this shithole
+}
+Rule FinalTruckEscapeBiker
+{
+	criteria ConceptFinalTruckEscape IsBiker
+	Response FinalTruckEscapeBiker
+}
+
+Criterion "ConceptHatePlaces" "Concept" "HatePlaces" required
+Response HatePlacesBiker
+{
+
+	scene "scenes/Biker/DLC2CanadaHate01.vcd"  then TeenGirl CrashCourseR06_IHate foo:0 0.1 //Oh my god, I hate Canada so much.
+	scene "scenes/Biker/DLC2CanadaHate02.vcd"  then TeenGirl CrashCourseR06_IHate foo:0 0.1 //There is one thing I hate more than vampires, is Canada.
+	scene "scenes/Biker/DLC2Riverside02.vcd"  //I hate Riverside.
+	scene "scenes/Biker/DLC2M1Goal01.vcd"  //I already hate this place. Let's get outta here.
+	scene "scenes/Biker/WorldAirport0416.vcd"  //I hate Ayn Rand.
+	scene "scenes/Biker/WorldHospital0201.vcd"  //I hate subways.
+	scene "scenes/Biker/WorldHospital0308.vcd"  //I hate sewers.
+	scene "scenes/Biker/WorldHospital0408.vcd"  //I hate hospitals.
+	scene "scenes/Biker/WorldFarmHouse0112.vcd"  //I hate the woods.
+	scene "scenes/Biker/WorldFarmHouse0212.vcd"  //I hate tunnels.
+	scene "scenes/Biker/WorldSmallTown0204.vcd"  //I hate trainyards.
+	scene "scenes/Biker/WorldSmallTown0311.vcd"  //I hate small towns.
+}
+Rule HatePlacesBiker
+{
+	criteria ConceptHatePlaces IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
+	Response HatePlacesBiker
+}
+
+criterion "ConceptHateLiving" "Concept" "HateLiving" required
+Response HateLivingBiker
+{
+	scene "scenes/Biker/WorldSmallTown0511.vcd"  //I hate lawyers
+	scene "scenes/Biker/C6DLC3SECONDSAFEROOM20.vcd"  then Manager C7M3_saferoom014a foo:0 .1 //I hate fish.
+	scene "scenes/Biker/DLC2BirdHate01.vcd"  then TeenGirl CrashCourseR01 foo:0 .1 //I hate birds.
+}
+Rule HateLivingBiker
+{
+	criteria ConceptHateLiving IsBiker
+	Response HateLivingBiker
+}
+
+criterion "ConceptHateThings" "Concept" "HateThings" required
+Response HateThingsBiker
+{
+	scene "scenes/Biker/DLC1_CommunityL4D107.vcd"  //I hate mountains.
+	scene "scenes/Biker/WorldAirport0425.vcd"  //I hate vans.
+	scene "scenes/Biker/WorldAirport0513.vcd"  //I hate planes.
+	scene "scenes/Biker/WorldHospital0409.vcd"  //I hate elevators.
+	scene "scenes/Biker/WorldHospital0410.vcd"  //I hate stairs.
+	scene "scenes/Biker/WorldHospital0501.vcd"  //I hate helicopters.
+	scene "scenes/Biker/DLC2Intro19.vcd"  //Guys. Everyone. I wanna say something: I. hate. helicopters.
+	scene "scenes/Biker/DLC2Steam01.vcd"  //I hate steam. [beat] Pipes.
+	scene "scenes/Biker/WorldSmallTown0509.vcd"  //I hate the water.
+	scene "scenes/Biker/C6DLC3PRESTARTLASTGEN01.vcd"  //I hate these stupid generators.
+}
+Rule HateThingsBiker
+{
+	criteria ConceptHateThings IsBiker
+	Response HateThingsBiker
+}
+
+criterion "ConceptHateOther" "Concept" "HateOther" required
+Response HateOtherBiker
+{
+	scene "scenes/Biker/DLC1_CommunityL4D103.vcd"  //I hate the snow.
+	scene "scenes/Biker/DLC1_CommunityL4D104.vcd"  //I hate the cold.
+	scene "scenes/Biker/DLC1_C6M3_L4D1FinaleCinematic13.vcd"  //I hate goodbyes.
+	scene "scenes/Biker/DLC2Intro22.vcd"  //I hate walking.
+	scene "scenes/Biker/DLC2MagazineRack01.vcd"  //I hate latest issues.
+	scene "scenes/Biker/C6DLC3SECONDSAFEROOM02.vcd"  //I hate your good feelings.
+	scene "scenes/Biker/C6DLC3SECONDSAFEROOM14.vcd"  //I hate this plan.
+	scene "scenes/Biker/C6DLC3SECONDSAFEROOM15.vcd"  //I hate this plan.
+	scene "scenes/Biker/C6DLC3JUMPINGOFFBRIDGE03.vcd"  //I hate suicide missions.
+	scene "scenes/Biker/DLC2Intro29.vcd"  //I HATE parades.
+	scene "scenes/Biker/WorldHospital0404.vcd"   then NamVet ConceptBlock711 foo:0 0.1 // I hate hospitals.  And doctors and lawyers and cops...
+	scene "scenes/Biker/WorldSmallTown0512.vcd"  then Any LaughFrancis foo:0 0.05 //I hate boat lawyers. When are they gonna get done practicing law?
+}
+Rule HateOtherBiker
+{
+	criteria ConceptHateOther IsBiker
+	Response HateOtherBiker
+}
+
+criterion "ConceptIHate" "Concept" "IHate" required
+Response IHateBiker
+{
+	scene "scenes/Biker/C6DLC3ZOEYDIES04.vcd" //I hate this!
+	scene "scenes/Biker/C6DLC3GRAVELHILL07.vcd" odds 30 //Anyone wanna guess what I'm hatin' right now?
+}
+Rule IHateBiker
+{
+	criteria ConceptIHate IsBiker
+	Response IHateBiker
+}
+
+criterion "ConceptDisgraceful" "Concept" "Disgraceful" required
+Response DisgracefulBiker
+{
+	scene "scenes/Biker/GoingToDieLight16.vcd" //Killed by vampires. What a goddamn disgrace. 
+}
+Rule DisgracefulBiker
+{
+	criteria ConceptDisgraceful IsBiker
+	Response DisgracefulBiker
+}
+
+criterion "ConceptPrettyAwesome" "Concept" "PrettyAwesome" required
+Response PrettyAwesomeBiker
+{
+	scene "scenes/Biker/YouAreWelcome10.vcd" //Yea, I'm pretty awesome. 
+}
+Rule PrettyAwesomeBiker
+{
+	criteria ConceptPrettyAwesome IsBiker
+	Response PrettyAwesomeBiker
+}
+
+criterion "ConceptGoToHell" "Concept" "GoToHell" required
+Response GoToHellBiker
+{
+	scene "scenes/Biker/GenericResponses12.vcd" //Go to hell. 
+}
+Rule GoToHellBiker
+{
+	criteria ConceptGoToHell IsBiker
+	Response GoToHellBiker
+}
+
+criterion "ConceptRoomSweeper" "Concept" "RoomSweeper" required
+Response RoomSweeperBiker
+{
+	scene "scenes/Biker/TakeShotgun04.vcd" then Biker Ctrl foo:0 0.1 //I'll take this room sweeper.
+}
+Rule RoomSweeperBiker
+{
+	criteria ConceptRoomSweeper IsBiker
+	Response RoomSweeperBiker
+}
+
+criterion "ConceptCtrl" "Concept" "Ctrl" required
+Response CtrlBiker
+{
+	scene "scenes/Biker/TakeShotgun01.vcd" //Shotgun! Allright folks, I'm on crowd control.
+}
+Rule CtrlBiker
+{
+	criteria ConceptCtrl IsBiker
+	Response CtrlBiker
+}
+
+criterion "ConceptStray" "Concept" "Stray" required
+Response StrayBiker
+{
+	scene "scenes/Biker/StayTogether11.vcd" then Biker PlayerFollowMe foo:0 .1 //Don't stray!
+}
+Rule StrayBiker
+{
+	criteria ConceptStray IsBiker
+	Response StrayBiker
+}
+
+criterion "ConceptGodKilled" "Concept" "GodKilled" required
+Response GodKilledBiker
+{
+	scene "scenes/Biker/WorldAirport0426.vcd" //God's dead, huh? Well, join the damn club.
+}
+Rule GodKilledBiker
+{
+	criteria ConceptGodKilled IsBiker
+	Response GodKilledBiker
+}
+
+criterion "ConceptOneMore" "Concept" "OneMore" required
+Response OneMoreBiker
+{
+	scene "scenes/Biker/C6DLC3SECONDEVENTOVER02.vcd"  //One more...
+}
+Rule OneMoreBiker
+{
+	criteria ConceptOneMore IsBiker
+	Response OneMoreBiker
+}
+
+criterion "ConceptNoThankYou" "Concept" "NoThankYou" required
+Response NoThankYouBiker
+{
+	scene "scenes/Biker/YouAreWelcome08.vcd" //No, thank YOU!
+}
+Rule NoThankYouBiker
+{
+	criteria ConceptNoThankYou IsBiker
+	Response NoThankYouBiker
+}
+
+criterion "ConceptFamiliar" "Concept" "Familiar" required
+Response FamiliarBiker
+{
+	scene "scenes/Biker/WorldAirport0320.vcd" then TeenGirl Cube foo:0 .2 //Hey suit, this look familiar? tch tck?
+}
+Rule FamiliarBiker
+{
+	criteria ConceptFamiliar IsBiker
+	Response FamiliarBiker
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// MAIN miscellaneous
+//--------------------------------------------------------------------------------------------------------------
+
+criterion "ConceptMerryChristmass" "Concept" "MerryChristmass" required
+Response MerryChristmassBiker
+{
+	scene "scenes/Biker/AlertGiveItem04.vcd" //Merry Christmas. 
+}
+Rule MerryChristmassBiker
+{
+	criteria ConceptMerryChristmass IsBiker
+	Response MerryChristmassBiker
+}
+
+criterion "ConceptWoozy" "Concept" "Woozy" required
+Response WoozyBiker
+{
+	scene "scenes/Biker/GoingToDie20.vcd" //I'm feelin' pretty shitty and a little woozy, the woozy is kinda fun
+}
+Rule WoozyBiker
+{
+	criteria ConceptWoozy IsBiker
+	Response WoozyBiker
+}
+
+criterion "ConceptRocknRoll" "Concept" "RocknRoll" required
+Response RocknRollBiker
+{
+	scene "scenes/Biker/ReactionPositive03.vcd" //Rock-n-roll!
+}
+Rule RocknRollBiker
+{
+	criteria ConceptRocknRoll IsBiker
+	Response RocknRollBiker
+}
+
+criterion "ConceptComeToDaddy" "Concept" "ComeToDaddy" required
+Response ComeToDaddyBiker
+{
+	scene "scenes/Biker/TakeAutoShotgun02.vcd" then Biker BlankScene foo:0 -1.260 //Come to daddy
+}
+Rule ComeToDaddyBiker
+{
+	criteria ConceptComeToDaddy IsBiker
+	Response ComeToDaddyBiker
+}
+
+criterion "ConceptCocktails" "Concept" "Cocktails" required
+Response CocktailsBiker
+{
+	scene "scenes/Biker/TakeMolotov01.vcd" then Biker ComeToDaddy foo:0 0.1 //Allright, cocktails!
+}
+Rule CocktailsBiker
+{
+	criteria ConceptCocktails IsBiker
+	Response CocktailsBiker
+}
+
+criterion "ConceptAssHead" "Concept" "AssHead" required
+Response AssHeadBiker
+{
+	scene "scenes/Biker/TeamKillAccident04.vcd" //Pull yer head outta yer ass. 
+}
+Rule AssHeadBiker
+{
+	criteria ConceptAssHead IsBiker
+	Response AssHeadBiker
+}
+
+criterion "ConceptBTF" "Concept" "BTF" required
+Response BTFBiker
+{
+	scene "scenes/Biker/ReviveFriendB13.vcd" //Back to the fight, Billy. 
+}
+Rule BTFBiker
+{
+	criteria ConceptBTF IsBiker IsNamVetAlive
+	Response BTFBiker
+}
+
+criterion "ConceptHotShot" "Concept" "HotShot" required
+Response HotShotBiker
+{
+	scene "scenes/Biker/WorldAirport0322.vcd"  //Heh heh, hot shot.
+}
+Rule HotShotBiker
+{
+	criteria ConceptHotShot IsBiker
+	Response HotShotBiker
+}
+
+criterion "ConceptDispleased" "Concept" "Displeased" required
+Response DispleasedBiker
+{
+	scene "scenes/Biker/LedgeHangMiddle05.vcd" then Biker BlankScene foo:0 -1.4 //Ohhhh
+}
+Rule DispleasedBiker
+{
+	criteria ConceptDispleased IsBiker
+	Response DispleasedBiker
+}
+
+criterion "ConceptHeyBro" "Concept" "HeyBro" required
+Response HeyBroBiker
+{
+	scene "scenes/Biker/C6DLC3INTRO18.vcd" then Biker Bro foo:0 -0.520 //Hey!
+}
+Rule HeyBroBiker
+{
+	criteria ConceptHeyBro IsBiker
+	Response HeyBroBiker
+}
+
+criterion "ConceptBro" "Concept" "Bro" required
+Response BroBiker
+{
+	scene "scenes/Biker/playersuggesthealthbill03.vcd" then Biker BlankScene foo:0 -0.780 //Bro!
+}
+Rule BroBiker
+{
+	criteria ConceptBro IsBiker
+	Response BroBiker
+}
+
+criterion "ConceptProfessor" "Concept" "Professor" required
+Response ProfessorBiker
+{
+	scene "scenes/Biker/Vampires06.vcd"  //Yeah whatever you say, Professor Monster.
+}
+Rule ProfessorBiker
+{
+	criteria ConceptProfessor IsBiker
+	Response ProfessorBiker
+}
+
+criterion "ConceptBeef" "Concept" "Beef" required
+Response BeefBiker
+{
+	scene "scenes/Biker/WorldHospital0403.vcd" then Any Farting foo:0 0.1 //Which one of you jackasses just beefed?
+}
+Rule BeefBiker
+{
+	criteria ConceptBeef IsBiker
+	Response BeefBiker
+}
+
+criterion "ConceptNutt" "Concept" "Nutt" required
+Response NuttBiker
+{
+	scene "scenes/Biker/worldsmalltownnpcbellman05.vcd"     //I am going to tear that bell down and shove it up your ass!
+	scene "scenes/Biker/worldsmalltown03npc03.vcd"     //If we live through this, I'm gonna frickin' kill that guy.
+}
+Rule NuttBiker
+{
+	criteria ConceptNutt IsBiker
+	Response NuttBiker
+}
+
+criterion "ConceptMillVamps" "Concept" "MillVamps" required
+Response MillVampsBiker
+{
+	scene "scenes/Biker/WorldFarmHouse0525.vcd"  then NamVet FarmVampiresB foo:0 -4.8 //You got to be shittin me.  We walk a hundred miles, fight 5 million vampires -
+}
+Rule MillVampsBiker
+{
+	criteria ConceptMillVamps IsBiker
+	Response MillVampsBiker
+}
+
+Criterion "ConceptBELCHE" "Concept" "BELCHE" required
+Response BELCHEBiker
+{ 
+	scene "scenes/Manager/Generic14.vcd" then Biker BlankScene foo:0 -0.3 //*BELCHE*
+}
+Rule BELCHEBiker
+{
+	criteria ConceptBELCHE IsBiker
+	Response BELCHEBiker
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// Padding out
+//--------------------------------------------------------------------------------------------------------------
+
+criterion "ConceptBlankScene" "Concept" "BlankScene" required
+Response BlankSceneBiker
+{
+	scene "scenes/Biker/Blank.vcd"  //
+}
+Rule BlankSceneBiker
+{
+	criteria ConceptBlankScene IsBiker
+	Response BlankSceneBiker
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// Triggering concepts for Manager
+//--------------------------------------------------------------------------------------------------------------
+
+criterion "ConceptTM1" "Concept" "TM1" required
+Response TM1Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager ConceptBlock717 foo:0 0.1 //I am bad, yes I am bad, YES I AM! WOO!
+}
+Rule TM1Biker
+{
+	criteria ConceptTM1 IsBiker
+	Response TM1Biker
+}
+
+criterion "ConceptTM2" "Concept" "TM2" required
+Response TM2Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager ConceptBlock019 foo:0 0.1 //Mister, if one of us get killed out here, I am gonna shoot my way in there and beat you to death with my gun!
+}
+Rule TM2Biker
+{
+	criteria ConceptTM2 IsBiker
+	Response TM2Biker
+}
+
+criterion "ConceptTM3" "Concept" "TM3" required
+Response TM3Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager C7M2_saferoom02d foo:0 0.1 //*Bill's an idiot*
+}
+Rule TM3Biker
+{
+	criteria ConceptTM3 IsBiker
+	Response TM3Biker
+}
+
+criterion "ConceptTM4" "Concept" "TM4" required
+Response TM4Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager CrashCourseR06 foo:0 0.1 //Canada? Francis, we're in Pennsylvania.
+}
+Rule TM4Biker
+{
+	criteria ConceptTM4 IsBiker
+	Response TM4Biker
+}
+
+criterion "ConceptTM5" "Concept" "TM5" required
+Response TM5Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager C7M1_saferoom12 foo:0 0.1 //I'm pissed too!
+}
+Rule TM5Biker
+{
+	criteria ConceptTM5 IsBiker
+	Response TM5Biker
+}
+
+criterion "ConceptTM6" "Concept" "TM6" required
+Response TM6Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager C7M2_saferoom02 foo:0 0.1 //Let me see. Uh. "Taki. I love you. Goodbye."
+}
+Rule TM6Biker
+{
+	criteria ConceptTM6 IsBiker
+	Response TM6Biker
+}
+
+criterion "ConceptTM7" "Concept" "TM7" required
+Response TM7Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager C7M3_saferoom004a foo:0 0.1 //Get it Francis?  A firewall?
+}
+Rule TM7Biker
+{
+	criteria ConceptTM7 IsBiker
+	Response TM7Biker
+}
+
+criterion "ConceptTM8" "Concept" "TM8" required
+Response TM8Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager Hey foo:0 0.1 //Hi
+}
+Rule TM8Biker
+{
+	criteria ConceptTM8 IsBiker
+	Response TM8Biker
+}
+
+criterion "ConceptTM9" "Concept" "TM9" required
+Response TM9Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager Byeee foo:0 0.1 //Byeee
+}
+Rule TM9Biker
+{
+	criteria ConceptTM9 IsBiker
+	Response TM9Biker
+}
+
+criterion "ConceptTM10" "Concept" "TM10" required
+Response TM10Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager ParadeFrancis foo:0 0.1 //That's FUNNY, Francis. Why don't you take your moustache, your little vest and your chaps and go find yourself a PARADE.
+}
+Rule TM10Biker
+{
+	criteria ConceptTM10 IsBiker
+	Response TM10Biker
+}
+
+criterion "ConceptTM11" "Concept" "TM11" required
+Response TM11Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager Alley foo:0 0.1 //Hey, Francis. Wasn't this the alley you were born in?
+}
+Rule TM11Biker
+{
+	criteria ConceptTM11 IsBiker
+	Response TM11Biker
+}
+
+criterion "ConceptTM12" "Concept" "TM12" required
+Response TM12Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager Driving foo:0 0.1 //Out of the way Francis, I'm driving!
+}
+Rule TM12Biker
+{
+	criteria ConceptTM12 IsBiker
+	Response TM12Biker
+}
+
+criterion "ConceptTM13" "Concept" "TM13" required
+Response TM13Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager Farting foo:0 0.1 //Heh. Farting...
+}
+Rule TM13Biker
+{
+	criteria ConceptTM13 IsBiker
+	Response TM13Biker
+}
+
+criterion "ConceptTM14" "Concept" "TM14" required
+Response TM14Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager Canada foo:0 0.1 //Canada?
+}
+Rule TM14Biker
+{
+	criteria ConceptTM14 IsBiker
+	Response TM14Biker
+}
+
+criterion "ConceptTM15" "Concept" "TM15" required
+Response TM15Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager ILove foo:0 0.1 //I love you guys!
+}
+Rule TM15Biker
+{
+	criteria ConceptTM15 IsBiker
+	Response TM15Biker
+}
+
+criterion "ConceptTM16" "Concept" "TM16" required
+Response TM16Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager PunkAss foo:0 0.1 //Punk Ass
+}
+Rule TM16Biker
+{
+	criteria ConceptTM16 IsBiker
+	Response TM16Biker
+}
+
+criterion "ConceptTM17" "Concept" "TM17" required
+Response TM17Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager Sucks foo:0 0.1 //This sucks.
+}
+Rule TM17Biker
+{
+	criteria ConceptTM17 IsBiker
+	Response TM17Biker
+}
+
+criterion "ConceptTM18" "Concept" "TM18" required
+Response TM18Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager MommaDaddy foo:0 0.1 //Oh yeah, who's your momma, who's your daddy
+}
+Rule TM18Biker
+{
+	criteria ConceptTM18 IsBiker
+	Response TM18Biker
+}
+
+criterion "ConceptTM19" "Concept" "TM19" required
+Response TM19Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager PositiveReactionL1 foo:0 0.1 //*Positive Reaction*
+}
+Rule TM19Biker
+{
+	criteria ConceptTM19 IsBiker
+	Response TM19Biker
+}
+
+criterion "ConceptTM20" "Concept" "TM20" required
+Response TM20Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager PositiveReactionL3 foo:0 0.1 //*Positive Reaction*
+}
+Rule TM20Biker
+{
+	criteria ConceptTM20 IsBiker
+	Response TM20Biker
+}
+
+criterion "ConceptTM21" "Concept" "TM21" required
+Response TM21Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager PositiveReactionL5 foo:0 0.1 //*Positive Reaction*
+}
+Rule TM21Biker
+{
+	criteria ConceptTM21 IsBiker
+	Response TM21Biker
+}
+
+criterion "ConceptTM22" "Concept" "TM22" required
+Response TM22Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager BoomDiah foo:0 0.1 //BOOM-diah
+}
+Rule TM22Biker
+{
+	criteria ConceptTM22 IsBiker
+	Response TM22Biker
+}
+
+criterion "ConceptTM23" "Concept" "TM23" required
+Response TM23Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager BELCHE foo:0 0.1 //*BELCHE*
+}
+Rule TM23Biker
+{
+	criteria ConceptTM23 IsBiker
+	Response TM23Biker
+}
+
+criterion "ConceptTM24" "Concept" "TM24" required
+Response TM24Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager DontLaugh foo:0 0.1 //Don't laugh man
+}
+Rule TM24Biker
+{
+	criteria ConceptTM24 IsBiker
+	Response TM24Biker
+}
+
+criterion "ConceptTM25" "Concept" "TM25" required
+Response TM25Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager Abuse foo:0 0.1 //I never saw nobody take that much abuse and live!
+}
+Rule TM25Biker
+{
+	criteria ConceptTM25 IsBiker
+	Response TM25Biker
+}
+
+criterion "ConceptTM26" "Concept" "TM26" required
+Response TM26Biker
+{
+	scene "scenes/Biker/Blank.vcd" then Manager CounterStrike foo:0 0.1 //Oh man, this is just like counter-strike
+}
+Rule TM26Biker
+{
+	criteria ConceptTM26 IsBiker
+	Response TM26Biker
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// Triggering concepts for NamVet
+//--------------------------------------------------------------------------------------------------------------
+
+criterion "ConceptTN1" "Concept" "TN1" required
+Response TN1Biker
+{
+	scene "scenes/Biker/Blank.vcd" then NamVet TrainUnhookedNamVet foo:0 0.1 //All Aboard
+}
+Rule TN1Biker
+{
+	criteria ConceptTN1 IsBiker
+	Response TN1Biker
+}
+
+criterion "ConceptTN2" "Concept" "TN2" required
+Response TN2Biker
+{
+	scene "scenes/Biker/Blank.vcd" then NamVet C7M1_saferoom08b foo:0 0.1 //Both shut up
+}
+Rule TN2Biker
+{
+	criteria ConceptTN2 IsBiker
+	Response TN2Biker
+}
+
+criterion "ConceptTN3" "Concept" "TN3" required
+Response TN3Biker
+{
+	scene "scenes/Biker/Blank.vcd" then NamVet ShutUp foo:0 0.1 //Shut Up
+}
+Rule TN3Biker
+{
+	criteria ConceptTN3 IsBiker
+	Response TN3Biker
+}
+
+criterion "ConceptTN4" "Concept" "TN4" required
+Response TN4Biker
+{
+	scene "scenes/Biker/Blank.vcd" then NamVet C7M1_saferoom22 foo:0 0.1 //It'll do you good son
+}
+Rule TN4Biker
+{
+	criteria ConceptTN4 IsBiker
+	Response TN4Biker
+}
+
+criterion "ConceptTN5" "Concept" "TN5" required
+Response TN5Biker
+{
+	scene "scenes/Biker/Blank.vcd" then NamVet JobDone foo:0 0.1 //My job's done.
+}
+Rule TN5Biker
+{
+	criteria ConceptTN5 IsBiker
+	Response TN5Biker
+}
+
+criterion "ConceptTN6" "Concept" "TN6" required
+Response TN6Biker
+{
+	scene "scenes/Biker/Blank.vcd" then NamVet NegNo foo:0 0.1 //No
+}
+Rule TN6Biker
+{
+	criteria ConceptTN6 IsBiker
+	Response TN6Biker
+}
+
+criterion "ConceptTN7" "Concept" "TN7" required
+Response TN7Biker
+{
+	scene "scenes/Biker/Blank.vcd" then NamVet LaughIdiot foo:0 0.1 //[loud, evil laugh]
+}
+Rule TN7Biker
+{
+	criteria ConceptTN7 IsBiker
+	Response TN7Biker
+}
+
+criterion "ConceptTN8" "Concept" "TN8" required
+Response TN8Biker
+{
+	scene "scenes/Biker/Blank.vcd" then NamVet GoToHell foo:0 0.1 //Go to hell.
+}
+Rule TN8Biker
+{
+	criteria ConceptTN8 IsBiker
+	Response TN8Biker
+}
+
+criterion "ConceptTN9" "Concept" "TN9" required
+Response TN9Biker
+{
+	scene "scenes/Biker/Blank.vcd" then NamVet Bah foo:0 0.1 //Bah
+}
+Rule TN9Biker
+{
+	criteria ConceptTN9 IsBiker
+	Response TN9Biker
+}
+
+criterion "ConceptTN10" "Concept" "TN10" required
+Response TN10Biker
+{
+	scene "scenes/Biker/Blank.vcd" then NamVet Cry foo:0 0.1 //I'll give you something to cry about.
+}
+Rule TN10Biker
+{
+	criteria ConceptTN10 IsBiker
+	Response TN10Biker
+}
+
+criterion "ConceptTN11" "Concept" "TN11" required
+Response TN11Biker
+{
+	scene "scenes/Biker/Blank.vcd" then NamVet Idiot foo:0 0.1 //You ever get tired of being an idiot?
+}
+Rule TN11Biker
+{
+	criteria ConceptTN11 IsBiker
+	Response TN11Biker
+}
+
+criterion "ConceptTN12" "Concept" "TN12" required
+Response TN12Biker
+{
+	scene "scenes/Biker/Blank.vcd" then NamVet SonOfABitch foo:0 0.1 //Son of a bitch
+}
+Rule TN12Biker
+{
+	criteria ConceptTN12 IsBiker
+	Response TN12Biker
+}
+
+criterion "ConceptTN13" "Concept" "TN13" required
+Response TN13Biker
+{
+	scene "scenes/Biker/Blank.vcd" then NamVet JesusChrist foo:0 0.1 //Jesus Christ
+}
+Rule TN13Biker
+{
+	criteria ConceptTN13 IsBiker
+	Response TN13Biker
+}
+
+criterion "ConceptTN14" "Concept" "TN14" required
+Response TN14Biker
+{
+	scene "scenes/Biker/Blank.vcd" then NamVet LostMind foo:0 0.1 //Have you lost your mind?
+}
+Rule TN14Biker
+{
+	criteria ConceptTN14 IsBiker
+	Response TN14Biker
+}
+
+criterion "ConceptTN15" "Concept" "TN15" required
+Response TN15Biker
+{
+	scene "scenes/Biker/Blank.vcd" then NamVet WTF foo:0 0.1 //What did you do you just do?
+}
+Rule TN15Biker
+{
+	criteria ConceptTN15 IsBiker
+	Response TN15Biker
+}
+
+criterion "ConceptTN16" "Concept" "TN16" required
+Response TN16Biker
+{
+	scene "scenes/Biker/Blank.vcd" then NamVet Horseshit foo:0 0.1 //Horseshit
+}
+Rule TN16Biker
+{
+	criteria ConceptTN6 IsBiker
+	Response TN16Biker
+}
+
+criterion "ConceptTN17" "Concept" "TN17" required
+Response TN17Biker
+{
+	scene "scenes/Biker/Blank.vcd" then NamVet MarriedHug foo:0 0.1 //Married Hug
+}
+Rule TN17Biker
+{
+	criteria ConceptTN17 IsBiker
+	Response TN17Biker
+}
+
+criterion "ConceptTN18" "Concept" "TN18" required
+Response TN18Biker
+{
+	scene "scenes/Biker/Blank.vcd" then NamVet BigMouth foo:0 0.1 //Looks like yer big mouth still works.
+}
+Rule TN18Biker
+{
+	criteria ConceptTN18 IsBiker
+	Response TN18Biker
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// Triggering concepts for TeenGirl
+//--------------------------------------------------------------------------------------------------------------
+
+criterion "ConceptTT1" "Concept" "TT1" required
+Response TT1Biker
+{
+	scene "scenes/Biker/Blank.vcd" then TeenGirl ConceptBlock037 foo:0 0.1 //What a dick
+}
+Rule TT1Biker
+{
+	criteria ConceptTT1 IsBiker
+	Response TT1Biker
+}
+
+criterion "ConceptTT2" "Concept" "TT2" required
+Response TT2Biker
+{
+	scene "scenes/Biker/Blank.vcd" then TeenGirl ConceptBlock647 foo:0 0.1 //Game over
+}
+Rule TT2Biker
+{
+	criteria ConceptTT2 IsBiker
+	Response TT2Biker
+}
+
+criterion "ConceptTT3" "Concept" "TT3" required
+Response TT3Biker
+{
+	scene "scenes/Biker/Blank.vcd" then TeenGirl bouncereaction foo:0 0.1 //Bounce
+}
+Rule TT3Biker
+{
+	criteria ConceptTT3 IsBiker
+	Response TT3Biker
+}
+
+criterion "ConceptTT4" "Concept" "TT4" required
+Response TT4Biker
+{
+	scene "scenes/Biker/Blank.vcd" then TeenGirl C7M3_saferoom016c foo:0 0.1 //I hate putting the lotion in the basket.
+}
+Rule TT4Biker
+{
+	criteria ConceptTT4 IsBiker
+	Response TT4Biker
+}
+
+criterion "ConceptTT5" "Concept" "TT5" required
+Response TT5Biker
+{
+	scene "scenes/Biker/Blank.vcd" then TeenGirl C7M3_saferoom004b foo:0 0.1 //Booo
+}
+Rule TT5Biker
+{
+	criteria ConceptTT5 IsBiker
+	Response TT5Biker
+}
+
+criterion "ConceptTT6" "Concept" "TT6" required
+Response TT6Biker
+{
+	scene "scenes/Biker/Blank.vcd" then TeenGirl Sanders foo:0 0.1 //Boohoo hoo, I don't know what to do… Go to hell Colonel Sanders
+}
+Rule TT6Biker
+{
+	criteria ConceptTT6 IsBiker
+	Response TT6Biker
+}
+
+criterion "ConceptTT7" "Concept" "TT7" required
+Response TT7Biker
+{
+	scene "scenes/Biker/Blank.vcd" then TeenGirl Hey foo:0 0.1 //Hey
+}
+Rule TT7Biker
+{
+	criteria ConceptTT7 IsBiker
+	Response TT7Biker
+}
+
+criterion "ConceptTT8" "Concept" "TT8" required
+Response TT8Biker
+{
+	scene "scenes/Biker/Blank.vcd" then TeenGirl FrancisStillGotIt foo:0 0.1 //Francis, it's nice to see you still have that in you.
+}
+Rule TT8Biker
+{
+	criteria ConceptTT8 IsBiker
+	Response TT8Biker
+}
+
+criterion "ConceptTT9" "Concept" "TT9" required
+Response TT9Biker
+{
+	scene "scenes/Biker/Blank.vcd" then TeenGirl ZoeyMimicing foo:0 0.1 //
+}
+Rule TT9Biker
+{
+	criteria ConceptTT9 IsBiker
+	Response TT9Biker
+}
+
+criterion "ConceptTT10" "Concept" "TT10" required
+Response TT10Biker
+{
+	scene "scenes/Biker/Blank.vcd" then TeenGirl Farting foo:0 0.1 //Heh. Farting.
+}
+Rule TT10Biker
+{
+	criteria ConceptTT10 IsBiker
+	Response TT10Biker
+}
+
+criterion "ConceptTT11" "Concept" "TT11" required
+Response TT11Biker
+{
+	scene "scenes/Biker/Blank.vcd" then TeenGirl Brave foo:0 0.1 //chickenshits
+}
+Rule TT11Biker
+{
+	criteria ConceptTT11 IsBiker
+	Response TT11Biker
+}
+
+criterion "ConceptTT12" "Concept" "TT12" required
+Response TT12Biker
+{
+	scene "scenes/Biker/Blank.vcd" then TeenGirl Mama foo:0 0.1 //That's right... come to mama...
+}
+Rule TT12Biker
+{
+	criteria ConceptTT12 IsBiker
+	Response TT12Biker
+}
+
+criterion "ConceptTT13" "Concept" "TT13" required
+Response TT13Biker
+{
+	scene "scenes/Biker/Blank.vcd" then TeenGirl License foo:0 0.1 //'Pilot's License...revoked.'
+}
+Rule TT13Biker
+{
+	criteria ConceptTT13 IsBiker
+	Response TT13Biker
+}
+
+criterion "ConceptTT14" "Concept" "TT14" required
+Response TT14Biker
+{
+	scene "scenes/Biker/Blank.vcd" then TeenGirl CanadiansAreDicks foo:0 0.1 //Yeah! Canadians are DICKS!
+}
+Rule TT14Biker
+{
+	criteria ConceptTT14 IsBiker
+	Response TT14Biker
+}

@@ -1,0 +1,1772 @@
+//--------------------------------------------------------------------------------------------------------------
+// Custom Response Rule File
+// For Zoey by Undergo
+//--------------------------------------------------------------------------------------------------------------
+
+//--------------------------------------------------------------------------------------------------------------
+// DLC1
+//--------------------------------------------------------------------------------------------------------------
+
+criterion "ConceptSanders" "Concept" "Sanders" required
+Response SandersTeenGirl
+{
+	scene "scenes/TeenGirl/dlc1_c6m1_initialmeeting13.vcd" //Boohoo hoo, I don't know what to do… Go to hell Colonel Sanders
+}
+Rule SandersTeenGirl
+{
+	criteria ConceptSanders IsTeenGirl
+	Response SandersTeenGirl
+}
+
+criterion "ConceptGoodLuck" "Concept" "GoodLuck" required
+Response GoodLuckTeenGirl
+{
+	scene "scenes/TeenGirl/dlc1_c6m1_initialmeeting17.vcd" //Sorry, good luck?
+	scene "scenes/TeenGirl/dlc1_c6m1_initialmeeting18.vcd" //Sorry, good luck?
+}
+Rule GoodLuckTeenGirl
+{
+	criteria ConceptGoodLuck IsTeenGirl
+	Response GoodLuckTeenGirl
+}
+
+criterion "ConceptGoodLuckZ" "Concept" "GoodLuckZ" required
+Response GoodLuckZTeenGirl
+{
+	scene "scenes/TeenGirl/dlc1_c6m3_l4d1finalefinalgas04.vcd" //Good luck!
+	scene "scenes/TeenGirl/dlc1_c6m1_initialmeeting24.vcd" //Good luck!
+}
+Rule GoodLuckZTeenGirl
+{
+	criteria ConceptGoodLuckZ IsTeenGirl
+	Response GoodLuckZTeenGirl
+}
+
+criterion "ConceptHelloDownThere" "Concept" "HelloDownThere" required
+Response HelloDownThereTeenGirl
+{
+	scene "scenes/TeenGirl/dlc1_c6m1_initialmeeting19.vcd" //Hello down there!
+	scene "scenes/TeenGirl/dlc1_c6m1_initialmeeting21.vcd" //Hello down there!
+}
+Rule HelloDownThereTeenGirl
+{
+	criteria ConceptHelloDownThere IsTeenGirl
+	Response HelloDownThereTeenGirl
+}
+
+criterion "ConceptThatFeeling" "Concept" "ThatFeeling" required
+Response ThatFeelingTeenGirl
+{
+	scene "scenes/TeenGirl/dlc1_c6m1_initialmeeting20.vcd" //Yeah, I know that feeling.
+	scene "scenes/TeenGirl/dlc1_c6m1_initialmeeting23.vcd" //Yeah, I know that feeling.
+}
+Rule ThatFeelingTeenGirl
+{
+	criteria ConceptThatFeeling IsTeenGirl
+	Response ThatFeelingTeenGirl
+}
+
+criterion "ConceptHimRly" "Concept" "HimRly" required
+Response HimRlyTeenGirl
+{
+	scene "scenes/TeenGirl/dlc1_c6m3_finalechat05.vcd" //Francis? Him? Are you kidding? REALLY?
+	scene "scenes/TeenGirl/dlc1_c6m3_finalechat06.vcd" //Francis? Him? Are you kidding? REALLY?
+	scene "scenes/TeenGirl/dlc1_c6m3_finalechat09.vcd" //Francis? Him? Are you kidding? REALLY?
+}
+Rule HimRlyTeenGirl
+{
+	criteria ConceptHimRly IsTeenGirl
+	Response HimRlyTeenGirl
+}
+
+criterion "ConceptHey" "Concept" "Hey" required
+Response HeyTeenGirl
+{
+	scene "scenes/TeenGirl/dlc1_c6m3_finalechat15.vcd" //Hey
+	scene "scenes/TeenGirl/dlc1_c6m3_finalechat16.vcd" //Hey
+}
+Rule HeyTeenGirl
+{
+	criteria ConceptHey IsTeenGirl
+	Response HeyTeenGirl
+}
+
+criterion "ConceptFrancisStillGotIt" "Concept" "FrancisStillGotIt" required
+Response FrancisStillGotItTeenGirl
+{
+	scene "scenes/TeenGirl/dlc1_c6m3_l4d1finalecinematic08.vcd" //Francis, it's nice to see you still have that in you.
+	scene "scenes/TeenGirl/dlc1_c6m3_l4d1finalecinematic09.vcd" //Francis, it's nice to see you still have that in you.
+	scene "scenes/TeenGirl/dlc1_c6m3_l4d1finalecinematic10.vcd" //Francis, it's nice to see you still have that in you.
+}
+Rule FrancisStillGotItTeenGirl
+{
+	criteria ConceptFrancisStillGotIt IsTeenGirl
+	Response FrancisStillGotItTeenGirl
+}
+
+criterion "ConceptZoeyMimicing" "Concept" "ZoeyMimicing" required
+Response ZoeyMimicingTeenGirl
+{
+	scene "scenes/TeenGirl/dlc1_c6m3_l4d1finalecinematic15.vcd" //Go - proclaim liberty throughout all the lands, and to all the inhabitants thereof!
+	scene "scenes/TeenGirl/dlc1_c6m3_l4d1finalecinematic16.vcd" //You finally really did it. You maniacs! You blew it up! God damn you! God damn you all to hell!
+	scene "scenes/TeenGirl/dlc1_c6m3_l4d1finalecinematic17.vcd" //Remember soylent green is people!
+}
+Rule ZoeyMimicingTeenGirl
+{
+	criteria ConceptZoeyMimicing IsTeenGirl
+	Response ZoeyMimicingTeenGirl
+}
+
+criterion "ConceptYallComeBack" "Concept" "YallComeBack" required
+Response YallComeBackTeenGirl
+{
+	scene "scenes/TeenGirl/dlc1_c6m3_l4d1finalecinematic19.vcd" //Y'all come back now!
+	scene "scenes/TeenGirl/dlc1_c6m3_l4d1finalecinematic20.vcd" //Y'all come back now!
+}
+Rule YallComeBackTeenGirl
+{
+	criteria ConceptYallComeBack IsTeenGirl
+	Response YallComeBackTeenGirl
+}
+
+criterion "ConceptSureYouAre" "Concept" "SureYouAre" required
+Response SureYouAreTeenGirl
+{
+	scene "scenes/TeenGirl/dlc1_c6m3_l4d1finalecinematic22.vcd" then Biker IAMCop foo:0 .2 //Sure you are Francis, sure you are.
+}
+Rule SureYouAreTeenGirl
+{
+	criteria ConceptSureYouAre IsTeenGirl
+	Response SureYouAreTeenGirl
+}
+
+criterion "ConceptBringTheTanks" "Concept" "BringTheTanks" required
+Response BringTheTanksTeenGirl
+{
+	scene "scenes/TeenGirl/dlc1_l4d1tank04.vcd" //Bring the tanks back here!
+}
+Rule BringTheTanksTeenGirl
+{
+	criteria ConceptBringTheTanks IsTeenGirl
+	Response BringTheTanksTeenGirl
+}
+
+criterion "ConceptLikeVestsLaugh" "Concept" "LikeVestsLaugh" required
+Response LikeVestsLaughTeenGirl
+{
+	scene "scenes/TeenGirl/laughter10.vcd" then Biker SrslyWhat foo:0 0.2 //short laugh
+	scene "scenes/TeenGirl/laughter15.vcd" then Biker HeardThat foo:0 0.2 //short laugh
+}
+Rule LikeVestsLaughTeenGirl
+{
+	criteria ConceptLikeVestsLaugh IsTeenGirl
+	Response LikeVestsLaughTeenGirl
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// DLC2
+//--------------------------------------------------------------------------------------------------------------
+
+criterion "ConceptZombieKiller" "Concept" "ZombieKiller" required
+Response ZombieKillerTeenGirl
+{
+	scene "scenes/TeenGirl/DLC2BulletinBoard01.vcd"  //'Funny, sexy brunette zombie killer wanted to lead three helpless men to safety.' Huh.
+}
+Rule ZombieKillerTeenGirl
+{
+	criteria ConceptZombieKiller IsTeenGirl
+	Response ZombieKillerTeenGirl
+}
+
+criterion "ConceptPaper" "Concept" "Paper" required
+Response PaperTeenGirl
+{
+	scene "scenes/TeenGirl/DLC2CopyPaper01.vcd" then Manager Recycle foo:0 0.1 //Free copy paper? Sweet! The apocalypse was totally worth it.
+}
+Rule PaperTeenGirl
+{
+	criteria ConceptPaper IsTeenGirl
+	Response PaperTeenGirl
+}
+
+criterion "ConceptFarting" "Concept" "Farting" required
+Response FartingTeenGirl
+{
+	scene "scenes/TeenGirl/DLC2GasTanks02.vcd" then Biker Farting foo:0 0.2 //Heh. Farting.
+}
+Rule FartingTeenGirl
+{
+	criteria ConceptFarting IsTeenGirl
+	Response FartingTeenGirl
+}
+
+criterion "ConceptGoodToLast" "Concept" "GoodToLast" required
+Response GoodToLastTeenGirl
+{
+	scene "scenes/TeenGirl/DLC2Intro09.vcd"  //I knew it was too good to last.
+}
+Rule GoodToLastTeenGirl
+{
+	criteria ConceptGoodToLast IsTeenGirl
+	Response GoodToLastTeenGirl
+}
+
+criterion "ConceptBrave" "Concept" "Brave" required
+Response BraveTeenGirl
+{
+	scene "scenes/TeenGirl/DLC2M2FinaleButtonPressGen201.vcd"  //Alright, guys, real brave, I guess I'LL do it... by myself...
+	scene "scenes/TeenGirl/C6DLC3OPENINGDOOR06.vcd"  //Unbelievable. You guys are the biggest chickenshits.
+}
+Rule BraveTeenGirl
+{
+	criteria ConceptBrave IsTeenGirl
+	Response BraveTeenGirl
+}
+
+criterion "ConceptMama" "Concept" "Mama" required
+Response MamaTeenGirl
+{
+	scene "scenes/TeenGirl/DLC2M2FinaleButtonPressLift01.vcd"  //That's right... come to mama...
+}
+Rule MamaTeenGirl
+{
+	criteria ConceptMama IsTeenGirl
+	Response MamaTeenGirl
+}
+
+criterion "ConceptNoRush" "Concept" "NoRush" required
+Response NoRushTeenGirl
+{
+	scene "scenes/TeenGirl/DLC2M2FinaleWaiting01.vcd"  //No rush, Lift! Take your time!
+}
+Rule NoRushTeenGirl
+{
+	criteria ConceptNoRush IsTeenGirl
+	Response NoRushTeenGirl
+}
+
+criterion "ConceptSupply" "Concept" "Supply" required
+Response SupplyTeenGirl
+{
+	scene "scenes/TeenGirl/DLC2MetalSupply01.vcd"  //Metal Supply! Oh thank God. I was running low on metal.
+	scene "scenes/TeenGirl/DLC2MetalSupply02.vcd"  //Metal Supply! Oh thank God. I was running low on iron.
+	scene "scenes/TeenGirl/DLC2MetalSupply03.vcd"  //Metal Supply! Oh thank God. I was running low on tungsten.
+}
+Rule SupplyTeenGirl
+{
+	criteria ConceptSupply IsTeenGirl
+	Response SupplyTeenGirl
+}
+
+criterion "ConceptLuckyStrike" "Concept" "LuckyStrike" required
+Response LuckyStrikeTeenGirl
+{
+	scene "scenes/TeenGirl/DLC2Misc01.vcd"  //Yeah. We're on a HUGE lucky streak, aren't we?
+}
+Rule LuckyStrikeTeenGirl
+{
+	criteria ConceptLuckyStrike IsTeenGirl
+	Response LuckyStrikeTeenGirl
+}
+
+criterion "ConceptSnack" "Concept" "Snack" required
+Response SnackTeenGirl
+{
+	scene "scenes/TeenGirl/DLC2Misc02.vcd"  //We would've been the in-flight snack.
+}
+Rule SnackTeenGirl
+{
+	criteria ConceptSnack IsTeenGirl
+	Response SnackTeenGirl
+}
+
+criterion "ConceptLicense" "Concept" "License" required
+Response LicenseTeenGirl
+{
+	scene "scenes/TeenGirl/DLC2PilotComment01.vcd"  //'Pilot's License...revoked.' Dunh-dunh-DUNNNNH...
+	scene "scenes/TeenGirl/DLC2PilotComment02.vcd"  //'Pilot's License...revoked.' WAAAAAAAAHH!
+}
+Rule LicenseTeenGirl
+{
+	criteria ConceptLicense IsTeenGirl
+	Response LicenseTeenGirl
+}
+
+criterion "ConceptCanadiansAreDicks" "Concept" "CanadiansAreDicks" required
+Response CanadiansAreDicksTeenGirl
+{
+	scene "scenes/TeenGirl/DLC2Riverside03.vcd"  //Yeah! Canadians are DICKS!
+}
+Rule CanadiansAreDicksTeenGirl
+{
+	criteria ConceptCanadiansAreDicks IsTeenGirl
+	Response CanadiansAreDicksTeenGirl
+}
+
+criterion "ConceptCanada" "Concept" "Canada" required
+Response CanadaTeenGirl
+{
+	scene "scenes/TeenGirl/DLC2Riverside01.vcd"  then TeenGirl HateCanada foo:0 -0.730 //Canada?
+}
+Rule CanadaTeenGirl
+{
+	criteria ConceptCanada IsTeenGirl
+	Response CanadaTeenGirl
+}
+
+criterion "ConceptHateCanada" "Concept" "HateCanada" required
+Response HateCanadaTeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd"  then Biker HateCanada foo:0 0.05 //
+}
+Rule HateCanadaTeenGirl
+{
+	criteria ConceptHateCanada IsTeenGirl
+	Response HateCanadaTeenGirl
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// DLC3 common
+//--------------------------------------------------------------------------------------------------------------
+
+Response OpenTankDoorTeenGirl
+{ 
+	scene "scenes/TeenGirl/C6DLC3OPENINGDOOR01.vcd"  //Get ready to fight this tank.
+	scene "scenes/TeenGirl/C6DLC3OPENINGDOOR03.vcd"  //Come on people tank's coming!
+	scene "scenes/TeenGirl/C6DLC3OPENINGDOOR04.vcd"  //I am so dead.
+	scene "scenes/TeenGirl/C6DLC3OPENINGDOOR05.vcd"  //I cannot believe i'm doing this.
+	scene "scenes/TeenGirl/C6DLC3OPENINGDOOR06.vcd"  //Unbelievable. You guys are the biggest chickenshits.
+	scene "scenes/TeenGirl/C6DLC3JUMPINGOFFBRIDGE09.vcd"  //Oh god, I am so screwed.
+	scene "scenes/TeenGirl/DLC2M2FinaleButtonPressGen201.vcd"  //Alright, guys, real brave, I guess I'LL do it... by myself...
+}
+Rule OpenTankDoorTeenGirl
+{
+	criteria ConceptOpenTankDoor IsTeenGirl
+	Response OpenTankDoorTeenGirl
+}
+
+Response DoNotOpenTankDoorTeenGirl
+{ 
+	scene "scenes/TeenGirl/C6DLC3TANKINTRAINYARD02.vcd" //So... Who's gonna open the door?
+	scene "scenes/TeenGirl/C6DLC3TANKINTRAINYARD03.vcd"  then Manager InfoRemc7m1_pretank02 foo:0 0.000 //Hey, Louis. You got a good feeling about opening that door.
+	scene "scenes/TeenGirl/C6DLC3TANKINTRAINYARD04.vcd"  then Custom_Manager Uhuh foo:0 0.000 //Hey, Louis. Do you have one of those good feeling about opening that door.
+	scene "scenes/TeenGirl/C6DLC3TANKINTRAINYARD05.vcd"  //So. This whole... door situation? You guys work it out.
+	scene "scenes/TeenGirl/C6DLC3TANKINTRAINYARD06.vcd"  then Biker InfoRemc7m1_pretank03 foo:0 0.000 //Hey Francis. Guywhoopensthetraindoorsayswhat?
+	scene "scenes/TeenGirl/C6DLC3TANKINTRAINYARD07.vcd"  then Biker InfoRemc7m1_pretank04 foo:0 0.000 //Hey, Francis. Be a pal and open that door.
+	scene "scenes/TeenGirl/C6DLC3TANKINTRAINYARD08.vcd"  then Biker InfoRemc7m1_pretank04 foo:0 0.000 //Hey, Francis. Be a pal and open that door.
+	scene "scenes/TeenGirl/C6DLC3TANKINTRAINYARD09.vcd"  //Somebody want to get the door? I'll open the next train car with a tank in it. Promise.
+	scene "scenes/TeenGirl/C6DLC3TANKINTRAINYARD10.vcd"  then Biker InfoRemc7m1_pretank01 foo:0 0.000 //So, I'm a girl, right? You guys wouldn't make a lady open up a deathtrap, right?
+}
+Rule DoNotOpenTankDoorTeenGirl
+{
+	criteria ConceptDoNotOpenTankDoor IsTeenGirl
+	Response DoNotOpenTankDoorTeenGirl
+}
+
+Response CrowsFlyTeenGirl
+{ 
+	scene "scenes/TeenGirl/C6DLC3GRAVELHILL03.vcd" //Ah! Dammit! Stupid birds.
+	scene "scenes/TeenGirl/C6DLC3GRAVELHILL04.vcd" //Shut. Up. You. Stupid. Crows.
+	scene "scenes/TeenGirl/C6DLC3GRAVELHILL05.vcd" //Shut. Up. You. Stupid. Crows.
+}
+Rule CrowsFlyTeenGirl
+{
+	criteria ConceptCrowsFly IsTeenGirl
+	Response CrowsFlyTeenGirl
+}
+
+Response FinalBridgeTeenGirl
+{ 
+	scene "scenes/TeenGirl/C6DLC3BRIDGEAVAILABLE02.vcd" //Get to the bridge!
+	scene "scenes/TeenGirl/C6DLC3BRIDGEAVAILABLE03.vcd" //We did it! Get to the bridge!
+}
+Rule FinalBridgeTeenGirl
+{
+	criteria ConceptFinalBridge IsTeenGirl
+	Response FinalBridgeTeenGirl
+}
+
+Response BridgeLeapTeenGirl
+{ 
+	scene "scenes/TeenGirl/C6DLC3JUMPINGOFFBRIDGE04.vcd"  //What am I doing what am I doing what am I doing...
+	scene "scenes/TeenGirl/C6DLC3JUMPINGOFFBRIDGE05.vcd"  //Stay put ill be right back, i hope!
+	scene "scenes/TeenGirl/C6DLC3JUMPINGOFFBRIDGE07.vcd"  //This is the last time you're gonna see these! Guns!
+	scene "scenes/TeenGirl/C6DLC3JUMPINGOFFBRIDGE08.vcd"  //Louis! I will always be your friend!
+	scene "scenes/TeenGirl/C6DLC3JUMPINGOFFBRIDGE15.vcd"  //I'll miss you guys! Stay there!
+	scene "scenes/TeenGirl/C6DLC3JUMPINGOFFBRIDGE16.vcd"  //I'll miss you guys! Stay there!
+	scene "scenes/TeenGirl/C6DLC3JUMPINGOFFBRIDGE17.vcd"  //I'll be back! Oh god, no I won't...
+}
+Rule BridgeLeapTeenGirl
+{
+	criteria ConceptBridgeLeap IsTeenGirl
+	Response BridgeLeapTeenGirl
+}
+
+Response FinalWeAreSafeFrancisTeenGirl
+{
+	scene "scenes/TeenGirl/C6DLC3FRANCISDIES03.vcd"  //Francis! You did it!
+	scene "scenes/TeenGirl/C6DLC3FRANCISDIES04.vcd"  //Francis! We're safe!
+	scene "scenes/TeenGirl/C6DLC3FRANCISDIES05.vcd"  //Francis! We're safe!
+}
+Rule FinalWeAreSafeFrancisTeenGirl
+{
+	criteria FinalWeAreSafeFrancis IsTeenGirl
+	Response FinalWeAreSafeFrancisTeenGirl
+}
+
+Response FinalWeAreSafeLouisTeenGirl
+{
+	scene "scenes/TeenGirl/C6DLC3LOUISDIES01.vcd"  //Thanks Louis!
+	scene "scenes/TeenGirl/C6DLC3LOUISDIES02.vcd"  //Louis you did it!
+	scene "scenes/TeenGirl/C6DLC3LOUISDIES03.vcd"  //Louis you did it!
+}
+Rule FinalWeAreSafeLouisTeenGirl
+{
+	criteria FinalWeAreSafeLouis IsTeenGirl
+	Response FinalWeAreSafeLouisTeenGirl
+}
+
+Response FinalWeAreSafeBillTeenGirl
+{
+	scene "scenes/TeenGirl/C6DLC3BILLDIES05.vcd"  //Bill, you did it! We're safe!
+	scene "scenes/TeenGirl/C6DLC3BILLDIES06.vcd"  //Bill, you did it! We're safe!
+	scene "scenes/TeenGirl/C6DLC3BILLDIES07.vcd"  //Bill you saved us!
+	scene "scenes/TeenGirl/C6DLC3BILLDIES14.vcd"  //Bill, you did it! We're safe!
+}
+Rule FinalWeAreSafeBillTeenGirl
+{
+	criteria FinalWeAreSafeBill IsTeenGirl
+	Response FinalWeAreSafeBillTeenGirl
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// DLC3 miscellaneous
+//--------------------------------------------------------------------------------------------------------------
+
+Criterion "ConceptLoveBill" "Concept" "LoveBill" required
+Response LoveBillTeenGirl
+{ 
+	scene "scenes/TeenGirl/C6DLC3BILLDIES09.vcd"  //I'm sorry Bill.  I love you!
+	scene "scenes/TeenGirl/C6DLC3BILLDIES10.vcd"  //I'm sorry Bill.  I love you!
+}
+Rule LoveBillTeenGirl
+{
+	criteria ConceptLoveBill IsTeenGirl
+	Response LoveBillTeenGirl
+}
+
+Criterion "ConceptBecause" "Concept" "Because" required
+Response BecauseTeenGirl
+{ 
+	scene "scenes/TeenGirl/C6DLC3FIRSTSAFEROOM03.vcd"  then TeenGirl BlankScene foo:0 -0.730 //Because..
+}
+Rule BecauseTeenGirl
+{
+	criteria ConceptBecause IsTeenGirl
+	Response BecauseTeenGirl
+}
+
+Criterion "ConceptBoobs" "Concept" "Boobs" required
+Response BoobsTeenGirl
+{ 
+	scene "scenes/TeenGirl/C6DLC3JUMPINGOFFBRIDGE07.vcd"  //This is the last time you're gonna see these! Guns!
+}
+Rule BoobsTeenGirl
+{
+	criteria ConceptBoobs IsTeenGirl
+	Response BoobsTeenGirl
+}
+
+Criterion "ConceptFriends" "Concept" "Friends" required
+Response FriendsTeenGirl
+{ 
+	scene "scenes/TeenGirl/C6DLC3JUMPINGOFFBRIDGE08.vcd"  //Louis! I will always be your friend!
+}
+Rule FriendsTeenGirl
+{
+	criteria ConceptFriends IsTeenGirl
+	Response FriendsTeenGirl
+}
+
+Criterion "ConceptMovies" "Concept" "Movies" required
+Response MoviesTeenGirl
+{ 
+	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM02.vcd"  //You asked me that last year? It would have been ten zombie movies. Now? Probably a documentary on how to make toilet paper.
+	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM03.vcd"  //A month ago? I would have picked ten zombie movies. Now? Like, ten documentaries on how to build shelter, catch food and make toilet paper.
+	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM04.vcd"  //A month ago? I would have picked ten zombie movies. Now? Like, ten documentaries on how to build shelter, catch food and make toilet paper.
+}
+Rule MoviesTeenGirl
+{
+	criteria ConceptMovies IsTeenGirl
+	Response MoviesTeenGirl
+}
+
+Criterion "ConceptOneMore" "Concept" "OneMore" required
+Response OneMoreTeenGirl
+{ 
+	scene "scenes/TeenGirl/C6DLC3SECONDEVENTOVER02.vcd" //One more!
+}
+Rule OneMoreTeenGirl
+{
+	criteria ConceptOneMore IsTeenGirl
+	Response OneMoreTeenGirl
+}
+
+Criterion "ConceptDone" "Concept" "Done" required
+Response DoneTeenGirl
+{ 
+	scene "scenes/TeenGirl/C6DLC3FIRSTEVENTOVER01.vcd" then TeenGirl BlankScene foo:0 -0.5 //Done!
+}
+Rule DoneTeenGirl
+{
+	criteria ConceptDone IsTeenGirl
+	Response DoneTeenGirl
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// MAIN responses
+//--------------------------------------------------------------------------------------------------------------
+
+Criterion "ConceptPlayerSeeDeadPlayers" "Concept" "PlayerSeeDeadPlayers" required
+Response PlayerSeeDeadPlayersFrancisTeenGirl
+{ 
+	scene "scenes/TeenGirl/GriefBiker06.vcd"  //God, not Francis
+	scene "scenes/TeenGirl/GriefBiker07.vcd"  //oh god, not Francis
+}
+Rule PlayerSeeDeadPlayersFrancisTeenGirl
+{
+	criteria ConceptPlayerSeeDeadPlayers IsTeenGirl SubjectIsBiker
+	Response PlayerSeeDeadPlayersFrancisTeenGirl
+}
+
+Response PlayerSeeDeadPlayersBillTeenGirl
+{ 
+	scene "scenes/TeenGirl/C6DLC3BILLDIES08.vcd"  //We won't forget you Bill!
+	scene "scenes/TeenGirl/C6DLC3BILLDIES09.vcd"  //I'm sorry Bill.  I love you!
+	scene "scenes/TeenGirl/C6DLC3BILLDIES10.vcd"  //I'm sorry Bill.  I love you!
+	scene "scenes/TeenGirl/C6DLC3BILLDIES11.vcd"  //Ahh Bill, I love you old man.
+}
+Rule PlayerSeeDeadPlayersBillTeenGirl
+{
+	criteria ConceptPlayerSeeDeadPlayers IsTeenGirl SubjectIsNamvet
+	Response PlayerSeeDeadPlayersBillTeenGirl
+}
+
+Response PlayerSeeDeadPlayersLouisTeenGirl
+{ 
+	scene "scenes/TeenGirl/C6DLC3LOUISDIES05.vcd"  //Oh damnit Louis!
+	scene "scenes/TeenGirl/GriefManager02.vcd"  //Louis!
+	scene "scenes/TeenGirl/GriefManager03.vcd"  //Louis, oh god I'm going to miss you.
+	scene "scenes/TeenGirl/GriefManager08.vcd"  //Oh no, not Louis!
+	scene "scenes/TeenGirl/GriefManager11.vcd"  //Oh Louis, oh god I can't believe it.
+}
+Rule PlayerSeeDeadPlayersLouisTeenGirl
+{
+	criteria ConceptPlayerSeeDeadPlayers IsTeenGirl SubjectIsManager
+	Response PlayerSeeDeadPlayersLouisTeenGirl
+}
+
+Criterion "ConceptHealUp" "Concept" "HealUp" required
+Response HealUpBillTeenGirl
+{ 
+	scene "scenes/TeenGirl/PlayerSuggestHealthSpecific06.vcd"  //Bill, might be time to heal up.
+	scene "scenes/TeenGirl/PlayerSuggestHealthSpecific07.vcd"  //Bill, might be time to heal up.
+	scene "scenes/TeenGirl/SuggestHealthBill01.vcd"  //Bill, use your first aid kit
+	scene "scenes/TeenGirl/SuggestHealthBill02.vcd"  //Bill, use your first aid kit
+}
+Rule HealUpBillTeenGirl
+{
+	criteria ConceptHealUp IsTeenGirl SubjectIsNamVet
+	Response HealUpBillTeenGirl
+}
+
+Response HealUpFrancisTeenGirl
+{ 
+	scene "scenes/TeenGirl/PlayerSuggestHealthSpecific04.vcd"  //Francis, you might want to heal.
+	scene "scenes/TeenGirl/PlayerSuggestHealthSpecific05.vcd"  //Francis, you might want to heal.
+	scene "scenes/TeenGirl/SuggestHealthFrancis01.vcd"  //Francis, use your first aid kit
+}
+Rule HealUpFrancisTeenGirl
+{
+	criteria ConceptHealUp IsTeenGirl SubjectIsBiker
+	Response HealUpFrancisTeenGirl
+}
+
+Response HealUpLouisTeenGirl
+{ 
+	scene "scenes/TeenGirl/PlayerSuggestHealthSpecific08.vcd"  //Louis, come on, patch yourself up.
+	scene "scenes/TeenGirl/SuggestHealthLouis01.vcd"  //Louis, use your first aid kit
+	scene "scenes/TeenGirl/SuggestHealthLouis02.vcd"  //Louis, use your first aid kit
+}
+Rule HealUpLouisTeenGirl
+{
+	criteria ConceptHealUp IsTeenGirl SubjectIsManager
+	Response HealUpLouisTeenGirl
+}
+
+criterion "ConceptShoesOff" "Concept" "ShoesOff" required
+Response ShoesOffTeenGirl
+{
+	scene "scenes/TeenGirl/WorldAirport0409.vcd" //Whatever you do, Francis, please don't take off your shoes.
+}
+Rule ShoesOffTeenGirl
+{
+	criteria ConceptShoesOff IsTeenGirl
+	Response ShoesOffTeenGirl
+}
+
+criterion "ConceptDick" "Concept" "Dick" required
+Response DickTeenGirl
+{
+	scene "scenes/TeenGirl/WorldAirport05NPC07.vcd" //What a dick.
+}
+Rule DickTeenGirl
+{
+	criteria ConceptDick IsTeenGirl
+	Response DickTeenGirl
+}
+
+criterion "ConceptLawyers" "Concept" "Lawyers" required
+Response LawyersTeenGirl
+{
+	scene "scenes/TeenGirl/WorldAirport0214.vcd" //What do you call 5000 infected lawyers?
+}
+Rule LawyersTeenGirl
+{
+	criteria ConceptLawyers IsTeenGirl
+	Response LawyersTeenGirl
+}
+
+criterion "ConceptCube" "Concept" "Cube" required
+Response CubeTeenGirl
+{
+	scene "scenes/TeenGirl/WorldAirport0218.vcd" then Manager ResponseSoftDispleasureSwear foo:0 0.05 //Louis did you work in a cube like these?
+	scene "scenes/TeenGirl/WorldAirport0219.vcd" then Manager ResponseSoftDispleasureSwear foo:0 0.05 //Hey Louis: all these cubicles make you homesick?
+}
+Rule CubeTeenGirl
+{
+	criteria ConceptCube IsTeenGirl
+	Response CubeTeenGirl
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// MAIN miscellaneous
+//--------------------------------------------------------------------------------------------------------------
+
+criterion "ConceptThisPerv" "Concept" "ThisPerv" required
+Response ThisPervTeenGirl
+{
+	scene "scenes/TeenGirl/hurtminor01.vcd" //
+}
+Rule ThisPervTeenGirl
+{
+	criteria ConceptThisPerv IsTeenGirl
+	Response ThisPervTeenGirl
+}
+
+criterion "ConceptCharming" "Concept" "Charming" required
+Response CharmingTeenGirl
+{
+	scene "scenes/TeenGirl/ReactionPositive12.vcd" //You are a charming beautiful man
+	scene "scenes/TeenGirl/ReactionPositive27.vcd" then TeenGirl BlankScene foo:0 -1.8 //You are beautiful, sexy and charming. Thank you.
+}
+Rule CharmingTeenGirl
+{
+	criteria ConceptCharming IsTeenGirl
+	Response CharmingTeenGirl
+}
+
+criterion "ConceptEasyWay" "Concept" "EasyWay" required
+Response EasyWayTeenGirl
+{
+	scene "scenes/TeenGirl/WorldSmallTown0108.vcd" //Boom! So much for the easy way.
+}
+Rule EasyWayTeenGirl
+{
+	criteria ConceptEasyWay IsTeenGirl
+	Response EasyWayTeenGirl
+}
+
+criterion "ConceptGetLost" "Concept" "GetLost" required
+Response GetLostTeenGirl
+{
+	scene "scenes/TeenGirl/WorldAirport0407.vcd" //Hey Louis, try not to get lost.
+}
+Rule GetLostTeenGirl
+{
+	criteria ConceptGetLost IsTeenGirl
+	Response GetLostTeenGirl
+}
+
+criterion "ConceptRow" "Concept" "Row" required
+Response RowTeenGirl
+{
+	scene "scenes/TeenGirl/WorldAirport0418.vcd" //Louis, your row isn't boarding yet.
+}
+Rule RowTeenGirl
+{
+	criteria ConceptRow IsTeenGirl
+	Response RowTeenGirl
+}
+
+criterion "ConceptGowns" "Concept" "Gowns" required
+Response GownsTeenGirl
+{
+	scene "scenes/TeenGirl/WorldHospital0403.vcd" then Manager elevatorShortLaugh foo:0 0.05 //Louis, you'd look good in one of those hospital gowns.
+}
+Rule GownsTeenGirl
+{
+	criteria ConceptGowns IsTeenGirl
+	Response GownsTeenGirl
+}
+
+criterion "ConceptGodKilled" "Concept" "GodKilled" required
+Response GodKilledTeenGirl
+{
+	scene "scenes/TeenGirl/worldairport0403.vcd" then Biker GodKilled foo:0 .1 //Oh no, the zombies killed god!
+	scene "scenes/TeenGirl/worldairport0404.vcd" then Biker GodKilled foo:0 .1 //Oh no, the zombies killed god!
+}
+Rule GodKilledTeenGirl
+{
+	criteria ConceptGodKilled IsTeenGirl
+	Response GodKilledTeenGirl
+}
+
+criterion "ConceptYoink" "Concept" "Yoink" required
+Response YoinkTeenGirl
+{
+	scene "scenes/TeenGirl/Generic20.vcd" //Yoink!
+}
+Rule YoinkTeenGirl
+{
+	criteria ConceptYoink IsTeenGirl
+	Response YoinkTeenGirl
+}
+
+criterion "ConceptImTheGirl" "Concept" "ImTheGirl" required
+Response ImTheGirlTeenGirl
+{
+	scene "scenes/TeenGirl/ReviveFriendB16.vcd" then TeenGirl Whining foo:0 .2 //Come on, I'm the girl here.
+}
+Rule ImTheGirlTeenGirl
+{
+	criteria ConceptImTheGirl IsTeenGirl
+	Response ImTheGirlTeenGirl
+}
+
+criterion "ConceptWhining" "Concept" "Whining" required
+Response WhiningTeenGirl
+{
+	scene "scenes/TeenGirl/ReviveFriendB17.vcd" //Stop whining. Let's go.
+}
+Rule WhiningTeenGirl
+{
+	criteria ConceptWhining IsTeenGirl
+	Response WhiningTeenGirl
+}
+
+criterion "ConceptFreshAir" "Concept" "FreshAir" required
+Response FreshAirTeenGirl
+{
+	scene "scenes/TeenGirl/WorldSmallTown0205.vcd" //Fresh air!
+}
+Rule FreshAirTeenGirl
+{
+	criteria ConceptFreshAir IsTeenGirl
+	Response FreshAirTeenGirl
+}
+
+criterion "ConceptJerkAss" "Concept" "JerkAss" required
+Response JerkAssTeenGirl
+{
+	scene "scenes/TeenGirl/worldsmalltown03npc03.vcd" then TeenGirl BlankScene foo:0 -1.315 //Hey! Jerkass.
+}
+Rule JerkAssTeenGirl
+{
+	criteria ConceptJerkAss IsTeenGirl
+	Response JerkAssTeenGirl
+}
+
+Criterion "ConceptBELCHE" "Concept" "BELCHE" required
+Response BELCHETeenGirl
+{ 
+	scene "scenes/Manager/Generic14.vcd" then TeenGirl BlankScene foo:0 -0.3 //*BELCHE*
+}
+Rule BELCHETeenGirl
+{
+	criteria ConceptBELCHE IsTeenGirl
+	Response BELCHETeenGirl
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// padding out
+//--------------------------------------------------------------------------------------------------------------
+
+criterion "ConceptBlankScene" "Concept" "BlankScene" required
+Response BlankSceneTeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" //
+}
+Rule BlankSceneTeenGirl
+{
+	criteria ConceptBlankScene IsTeenGirl
+	Response BlankSceneTeenGirl
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// Triggering concepts for Manager
+//--------------------------------------------------------------------------------------------------------------
+
+criterion "ConceptTM1" "Concept" "TM1" required
+Response TM1TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager ConceptBlock717 foo:0 0.1 //I am bad, yes I am bad, YES I AM! WOO!
+}
+Rule TM1TeenGirl
+{
+	criteria ConceptTM1 IsTeenGirl
+	Response TM1TeenGirl
+}
+
+criterion "ConceptTM2" "Concept" "TM2" required
+Response TM2TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager ConceptBlock019 foo:0 0.1 //Mister, if one of us get killed out here, I am gonna shoot my way in there and beat you to death with my gun!
+}
+Rule TM2TeenGirl
+{
+	criteria ConceptTM2 IsTeenGirl
+	Response TM2TeenGirl
+}
+
+criterion "ConceptTM3" "Concept" "TM3" required
+Response TM3TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager C7M2_saferoom02d foo:0 0.1 //*Bill's an idiot*
+}
+Rule TM3TeenGirl
+{
+	criteria ConceptTM3 IsTeenGirl
+	Response TM3TeenGirl
+}
+
+criterion "ConceptTM4" "Concept" "TM4" required
+Response TM4TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager Canada foo:0 0.1 //Canada? Francis, we're in Pennsylvania.
+}
+Rule TM4TeenGirl
+{
+	criteria ConceptTM4 IsTeenGirl
+	Response TM4TeenGirl
+}
+
+criterion "ConceptTM5" "Concept" "TM5" required
+Response TM5TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager C7M1_saferoom12 foo:0 0.1 //I'm pissed too!
+}
+Rule TM5TeenGirl
+{
+	criteria ConceptTM5 IsTeenGirl
+	Response TM5TeenGirl
+}
+
+criterion "ConceptTM6" "Concept" "TM6" required
+Response TM6TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager C7M2_saferoom02 foo:0 0.1 //Let me see. Uh. "Taki. I love you. Goodbye."
+}
+Rule TM6TeenGirl
+{
+	criteria ConceptTM6 IsTeenGirl
+	Response TM6TeenGirl
+}
+
+criterion "ConceptTM7" "Concept" "TM7" required
+Response TM7TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager C7M3_saferoom004a foo:0 0.1 //Get it Francis?  A firewall?
+}
+Rule TM7TeenGirl
+{
+	criteria ConceptTM7 IsTeenGirl
+	Response TM7TeenGirl
+}
+
+criterion "ConceptTM8" "Concept" "TM8" required
+Response TM8TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager Hey foo:0 0.1 //Hi
+}
+Rule TM8TeenGirl
+{
+	criteria ConceptTM8 IsTeenGirl
+	Response TM8TeenGirl
+}
+
+criterion "ConceptTM9" "Concept" "TM9" required
+Response TM9TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager Byeee foo:0 0.1 //Byeee
+}
+Rule TM9TeenGirl
+{
+	criteria ConceptTM9 IsTeenGirl
+	Response TM9TeenGirl
+}
+
+criterion "ConceptTM10" "Concept" "TM10" required
+Response TM10TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager ParadeFrancis foo:0 0.1 //That's FUNNY, Francis. Why don't you take your moustache, your little vest and your chaps and go find yourself a PARADE.
+}
+Rule TM10TeenGirl
+{
+	criteria ConceptTM10 IsTeenGirl
+	Response TM10TeenGirl
+}
+
+criterion "ConceptTM11" "Concept" "TM11" required
+Response TM11TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager Alley foo:0 0.1 //Hey, Francis. Wasn't this the alley you were born in?
+}
+Rule TM11TeenGirl
+{
+	criteria ConceptTM11 IsTeenGirl
+	Response TM11TeenGirl
+}
+
+criterion "ConceptTM12" "Concept" "TM12" required
+Response TM12TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager Driving foo:0 0.1 //Out of the way Francis, I'm driving!
+}
+Rule TM12TeenGirl
+{
+	criteria ConceptTM12 IsTeenGirl
+	Response TM12TeenGirl
+}
+
+criterion "ConceptTM13" "Concept" "TM13" required
+Response TM13TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager Farting foo:0 0.1 //Heh. Farting...
+}
+Rule TM13TeenGirl
+{
+	criteria ConceptTM13 IsTeenGirl
+	Response TM13TeenGirl
+}
+
+criterion "ConceptTM14" "Concept" "TM14" required
+Response TM14TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager Canada foo:0 0.1 //Canada?
+}
+Rule TM14TeenGirl
+{
+	criteria ConceptTM14 IsTeenGirl
+	Response TM14TeenGirl
+}
+
+criterion "ConceptTM15" "Concept" "TM15" required
+Response TM15TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager ILove foo:0 0.1 //I love you guys!
+}
+Rule TM15TeenGirl
+{
+	criteria ConceptTM15 IsTeenGirl
+	Response TM15TeenGirl
+}
+
+criterion "ConceptTM16" "Concept" "TM16" required
+Response TM16TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager PunkAss foo:0 0.1 //Punk Ass
+}
+Rule TM16TeenGirl
+{
+	criteria ConceptTM16 IsTeenGirl
+	Response TM16TeenGirl
+}
+
+criterion "ConceptTM17" "Concept" "TM17" required
+Response TM17TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager Sucks foo:0 0.1 //This sucks.
+}
+Rule TM17TeenGirl
+{
+	criteria ConceptTM17 IsTeenGirl
+	Response TM17TeenGirl
+}
+
+criterion "ConceptTM18" "Concept" "TM18" required
+Response TM18TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager MommaDaddy foo:0 0.1 //Oh yeah, who's your momma, who's your daddy
+}
+Rule TM18TeenGirl
+{
+	criteria ConceptTM18 IsTeenGirl
+	Response TM18TeenGirl
+}
+
+criterion "ConceptTM19" "Concept" "TM19" required
+Response TM19TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager PositiveReactionL1 foo:0 0.1 //*Positive Reaction*
+}
+Rule TM19TeenGirl
+{
+	criteria ConceptTM19 IsTeenGirl
+	Response TM19TeenGirl
+}
+
+criterion "ConceptTM20" "Concept" "TM20" required
+Response TM20TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager PositiveReactionL3 foo:0 0.1 //*Positive Reaction*
+}
+Rule TM20TeenGirl
+{
+	criteria ConceptTM20 IsTeenGirl
+	Response TM20TeenGirl
+}
+
+criterion "ConceptTM21" "Concept" "TM21" required
+Response TM21TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager PositiveReactionL5 foo:0 0.1 //*Positive Reaction*
+}
+Rule TM21TeenGirl
+{
+	criteria ConceptTM21 IsTeenGirl
+	Response TM21TeenGirl
+}
+
+criterion "ConceptTM22" "Concept" "TM22" required
+Response TM22TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager BoomDiah foo:0 0.1 //BOOM-diah
+}
+Rule TM22TeenGirl
+{
+	criteria ConceptTM22 IsTeenGirl
+	Response TM22TeenGirl
+}
+
+criterion "ConceptTM23" "Concept" "TM23" required
+Response TM23TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager BELCHE foo:0 0.1 //*BELCHE*
+}
+Rule TM23TeenGirl
+{
+	criteria ConceptTM23 IsTeenGirl
+	Response TM23TeenGirl
+}
+
+criterion "ConceptTM24" "Concept" "TM24" required
+Response TM24TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager DontLaugh foo:0 0.1 //Don't laugh man
+}
+Rule TM24TeenGirl
+{
+	criteria ConceptTM24 IsTeenGirl
+	Response TM24TeenGirl
+}
+
+criterion "ConceptTM25" "Concept" "TM25" required
+Response TM25TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager Abuse foo:0 0.1 //I never saw nobody take that much abuse and live!
+}
+Rule TM25TeenGirl
+{
+	criteria ConceptTM25 IsTeenGirl
+	Response TM25TeenGirl
+}
+
+criterion "ConceptTM26" "Concept" "TM26" required
+Response TM26TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Manager CounterStrike foo:0 0.1 //Oh man, this is just like counter-strike
+}
+Rule TM26TeenGirl
+{
+	criteria ConceptTM26 IsTeenGirl
+	Response TM26TeenGirl
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// Triggering concepts for NamVet
+//--------------------------------------------------------------------------------------------------------------
+
+criterion "ConceptTN1" "Concept" "TN1" required
+Response TN1TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then NamVet TrainUnhookedNamVet foo:0 0.1 //All Aboard
+}
+Rule TN1TeenGirl
+{
+	criteria ConceptTN1 IsTeenGirl
+	Response TN1TeenGirl
+}
+
+criterion "ConceptTN2" "Concept" "TN2" required
+Response TN2TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then NamVet C7M1_saferoom08b foo:0 0.1 //Both shut up
+}
+Rule TN2TeenGirl
+{
+	criteria ConceptTN2 IsTeenGirl
+	Response TN2TeenGirl
+}
+
+criterion "ConceptTN3" "Concept" "TN3" required
+Response TN3TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then NamVet ShutUp foo:0 0.1 //Shut Up
+}
+Rule TN3TeenGirl
+{
+	criteria ConceptTN3 IsTeenGirl
+	Response TN3TeenGirl
+}
+
+criterion "ConceptTN4" "Concept" "TN4" required
+Response TN4TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then NamVet C7M1_saferoom22 foo:0 0.1 //It'll do you good son
+}
+Rule TN4TeenGirl
+{
+	criteria ConceptTN4 IsTeenGirl
+	Response TN4TeenGirl
+}
+
+criterion "ConceptTN5" "Concept" "TN5" required
+Response TN5TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then NamVet JobDone foo:0 0.1 //My job's done.
+}
+Rule TN5TeenGirl
+{
+	criteria ConceptTN5 IsTeenGirl
+	Response TN5TeenGirl
+}
+
+criterion "ConceptTN6" "Concept" "TN6" required
+Response TN6TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then NamVet NegNo foo:0 0.1 //No
+}
+Rule TN6TeenGirl
+{
+	criteria ConceptTN6 IsTeenGirl
+	Response TN6TeenGirl
+}
+
+criterion "ConceptTN7" "Concept" "TN7" required
+Response TN7TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then NamVet LaughIdiot foo:0 0.1 //[loud, evil laugh]
+}
+Rule TN7TeenGirl
+{
+	criteria ConceptTN7 IsTeenGirl
+	Response TN7TeenGirl
+}
+
+criterion "ConceptTN8" "Concept" "TN8" required
+Response TN8TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then NamVet GoToHell foo:0 0.1 //Go to hell.
+}
+Rule TN8TeenGirl
+{
+	criteria ConceptTN8 IsTeenGirl
+	Response TN8TeenGirl
+}
+
+criterion "ConceptTN9" "Concept" "TN9" required
+Response TN9TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then NamVet Bah foo:0 0.1 //Bah
+}
+Rule TN9TeenGirl
+{
+	criteria ConceptTN9 IsTeenGirl
+	Response TN9TeenGirl
+}
+
+criterion "ConceptTN10" "Concept" "TN10" required
+Response TN10TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then NamVet Cry foo:0 0.1 //I'll give you something to cry about.
+}
+Rule TN10TeenGirl
+{
+	criteria ConceptTN10 IsTeenGirl
+	Response TN10TeenGirl
+}
+
+criterion "ConceptTN11" "Concept" "TN11" required
+Response TN11TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then NamVet Idiot foo:0 0.1 //You ever get tired of being an idiot?
+}
+Rule TN11TeenGirl
+{
+	criteria ConceptTN11 IsTeenGirl
+	Response TN11TeenGirl
+}
+
+criterion "ConceptTN12" "Concept" "TN12" required
+Response TN12TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then NamVet SonOfABitch foo:0 0.1 //Son of a bitch
+}
+Rule TN12TeenGirl
+{
+	criteria ConceptTN12 IsTeenGirl
+	Response TN12TeenGirl
+}
+
+criterion "ConceptTN13" "Concept" "TN13" required
+Response TN13TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then NamVet JesusChrist foo:0 0.1 //Jesus Christ
+}
+Rule TN13TeenGirl
+{
+	criteria ConceptTN13 IsTeenGirl
+	Response TN13TeenGirl
+}
+
+criterion "ConceptTN14" "Concept" "TN14" required
+Response TN14TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then NamVet LostMind foo:0 0.1 //Have you lost your mind?
+}
+Rule TN14TeenGirl
+{
+	criteria ConceptTN14 IsTeenGirl
+	Response TN14TeenGirl
+}
+
+criterion "ConceptTN15" "Concept" "TN15" required
+Response TN15TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then NamVet WTF foo:0 0.1 //What did you do you just do?
+}
+Rule TN15TeenGirl
+{
+	criteria ConceptTN15 IsTeenGirl
+	Response TN15TeenGirl
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// Triggering concepts for Biker
+//--------------------------------------------------------------------------------------------------------------
+
+criterion "ConceptTB1" "Concept" "TB1" required
+Response TB1TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker hospital03_path08a2 foo:0 0.1 //hey hey
+}
+Rule TB1TeenGirl
+{
+	criteria ConceptTB1 IsTeenGirl
+	Response TB1TeenGirl
+}
+
+criterion "ConceptTB2" "Concept" "TB2" required
+Response TB2TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker CrashCourseR10 foo:0 0.1 //ha-ha-ha nice
+}
+Rule TB2TeenGirl
+{
+	criteria ConceptTB2 IsTeenGirl
+	Response TB2TeenGirl
+}
+
+criterion "ConceptTB3" "Concept" "TB3" required
+Response TB3TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker ConceptBlock697 foo:0 0.1 //Whatever
+}
+Rule TB3TeenGirl
+{
+	criteria ConceptTB3 IsTeenGirl
+	Response TB3TeenGirl
+}
+
+criterion "ConceptTB4" "Concept" "TB4" required
+Response TB4TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker ConceptBlock721 foo:0 0.1 //Go to hell
+}
+Rule TB4TeenGirl
+{
+	criteria ConceptTB4 IsTeenGirl
+	Response TB4TeenGirl
+}
+
+criterion "ConceptTB5" "Concept" "TB5" required
+Response TB5TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker CrashCourseR08 foo:0 0.1 //Doubt it
+}
+Rule TB5TeenGirl
+{
+	criteria ConceptTB5 IsTeenGirl
+	Response TB5TeenGirl
+}
+
+criterion "ConceptTB6" "Concept" "TB6" required
+Response TB6TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker ConceptBlock023 foo:0 0.1 //We're cops
+}
+Rule TB6TeenGirl
+{
+	criteria ConceptTB6 IsTeenGirl
+	Response TB6TeenGirl
+}
+
+criterion "ConceptTB7" "Concept" "TB7" required
+Response TB7TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker ConceptBlock558 foo:0 0.1 //helpless old man
+}
+Rule TB7TeenGirl
+{
+	criteria ConceptTB7 IsTeenGirl
+	Response TB7TeenGirl
+}
+
+criterion "ConceptTB8" "Concept" "TB8" required
+Response TB8TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker ConceptBlock040 foo:0 0.1 //Listen candy-pants
+}
+Rule TB8TeenGirl
+{
+	criteria ConceptTB8 IsTeenGirl
+	Response TB8TeenGirl
+}
+
+criterion "ConceptTB9" "Concept" "TB9" required
+Response TB9TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker ConceptBlock044 foo:0 0.1 //Everyone but us is either a zombie or an asshole.
+}
+Rule TB9TeenGirl
+{
+	criteria ConceptTB9 IsTeenGirl
+	Response TB9TeenGirl
+}
+
+criterion "ConceptTB10" "Concept" "TB10" required
+Response TB10TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker Smalltown04_path05a foo:0 0.1 //beard on
+}
+Rule TB10TeenGirl
+{
+	criteria ConceptTB10 IsTeenGirl
+	Response TB10TeenGirl
+}
+
+criterion "ConceptTB11" "Concept" "TB11" required
+Response TB11TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker  ConceptBlock607 foo:0 0.1 //beard turns
+}
+Rule TB11TeenGirl
+{
+	criteria ConceptTB11 IsTeenGirl
+	Response TB11TeenGirl
+}
+
+criterion "ConceptTB12" "Concept" "TB12" required
+Response TB12TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker C7M1_saferoom13 foo:0 0.1 //Bill's tears
+}
+Rule TB12TeenGirl
+{
+	criteria ConceptTB12 IsTeenGirl
+	Response TB12TeenGirl
+}
+
+criterion "ConceptTB13" "Concept" "TB13" required
+Response TB13TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker C7M3_saferoom004b foo:0 0.1 //Nerd
+}
+Rule TB13TeenGirl
+{
+	criteria ConceptTB13 IsTeenGirl
+	Response TB13TeenGirl
+}
+
+criterion "ConceptTB14" "Concept" "TB14" required
+Response TB14TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker InfoRemc7m1_tankcar01 foo:0 0.1 //Tanks?
+}
+Rule TB14TeenGirl
+{
+	criteria ConceptTB14 IsTeenGirl
+	Response TB14TeenGirl
+}
+
+criterion "ConceptTB15" "Concept" "TB15" required
+Response TB15TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker Hey foo:0 0.1 //Hey
+}
+Rule TB15TeenGirl
+{
+	criteria ConceptTB15 IsTeenGirl
+	Response TB15TeenGirl
+}
+
+criterion "ConceptTB16" "Concept" "TB16" required
+Response TB16TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker Suit foo:0 0.1 //Go to hell suit.
+}
+Rule TB16TeenGirl
+{
+	criteria ConceptTB16 IsTeenGirl
+	Response TB16TeenGirl
+}
+
+criterion "ConceptTB17" "Concept" "TB17" required
+Response TB17TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker Sanders foo:0 0.1 //Bite me Colonel Sanders.
+}
+Rule TB17TeenGirl
+{
+	criteria ConceptTB17 IsTeenGirl
+	Response TB17TeenGirl
+}
+
+criterion "ConceptTB18" "Concept" "TB18" required
+Response TB18TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker Brother foo:0 0.1 //Brother
+}
+Rule TB18TeenGirl
+{
+	criteria ConceptTB18 IsTeenGirl
+	Response TB18TeenGirl
+}
+
+criterion "ConceptTB19" "Concept" "TB19" required
+Response TB19TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker AnyVamps foo:0 0.1 //Are any of you vampires?
+}
+Rule TB19TeenGirl
+{
+	criteria ConceptTB19 IsTeenGirl
+	Response TB19TeenGirl
+}
+
+criterion "ConceptTB20" "Concept" "TB20" required
+Response TB20TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker IKnow foo:0 0.1 //I Know
+}
+Rule TB20TeenGirl
+{
+	criteria ConceptTB20 IsTeenGirl
+	Response TB20TeenGirl
+}
+
+criterion "ConceptTB21" "Concept" "TB21" required
+Response TB21TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker ImCop foo:0 0.1 //Nah, I'm a cop.
+}
+Rule TB21TeenGirl
+{
+	criteria ConceptTB21 IsTeenGirl
+	Response TB21TeenGirl
+}
+
+criterion "ConceptTB22" "Concept" "TB22" required
+Response TB22TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker CopyThat foo:0 0.1 //10-4
+}
+Rule TB22TeenGirl
+{
+	criteria ConceptTB22 IsTeenGirl
+	Response TB22TeenGirl
+}
+
+criterion "ConceptTB23" "Concept" "TB23" required
+Response TB23TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker CryBaby foo:0 0.1 //Cry Baby
+}
+Rule TB23TeenGirl
+{
+	criteria ConceptTB23 IsTeenGirl
+	Response TB23TeenGirl
+}
+
+criterion "ConceptTB24" "Concept" "TB24" required
+Response TB24TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker WomanOfTaste foo:0 0.1 //What? She's a woman of taste.
+}
+Rule TB24TeenGirl
+{
+	criteria ConceptTB24 IsTeenGirl
+	Response TB24TeenGirl
+}
+
+criterion "ConceptTB25" "Concept" "TB25" required
+Response TB25TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker TakinItSlow foo:0 0.1 //Takin' it slow, huh? I can respect that.
+}
+Rule TB25TeenGirl
+{
+	criteria ConceptTB25 IsTeenGirl
+	Response TB25TeenGirl
+}
+
+criterion "ConceptTB26" "Concept" "TB26" required
+Response TB26TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker WhatsUp foo:0 0.1 //What's up?
+}
+Rule TB26TeenGirl
+{
+	criteria ConceptTB26 IsTeenGirl
+	Response TB26TeenGirl
+}
+
+criterion "ConceptTB27" "Concept" "TB27" required
+Response TB27TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker SrslyWhat foo:0 0.1 //What? Seriously, what?
+}
+Rule TB27TeenGirl
+{
+	criteria ConceptTB27 IsTeenGirl
+	Response TB27TeenGirl
+}
+
+criterion "ConceptTB28" "Concept" "TB28" required
+Response TB28TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker HateCanada foo:0 0.1 //Hate Canada
+}
+Rule TB28TeenGirl
+{
+	criteria ConceptTB28 IsTeenGirl
+	Response TB28TeenGirl
+}
+
+criterion "ConceptTB29" "Concept" "TB29" required
+Response TB29TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker ForLease foo:0 0.1 //For Lease
+}
+Rule TB29TeenGirl
+{
+	criteria ConceptTB29 IsTeenGirl
+	Response TB29TeenGirl
+}
+
+criterion "ConceptTB30" "Concept" "TB30" required
+Response TB30TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker Hersch foo:0 0.1 //I drove for Hersch once. Till some guy laughed at my little brown shorts. And I beat him to death.
+}
+Rule TB30TeenGirl
+{
+	criteria ConceptTB30 IsTeenGirl
+	Response TB30TeenGirl
+}
+
+criterion "ConceptTB31" "Concept" "TB31" required
+Response TB31TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker CCIntro foo:0 0.1 //
+}
+Rule TB31TeenGirl
+{
+	criteria ConceptTB31 IsTeenGirl
+	Response TB31TeenGirl
+}
+
+criterion "ConceptTB32" "Concept" "TB32" required
+Response TB32TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker Tie foo:0 0.1 //You still wearin' that tie, Louis? What, you got a meeting? Bah ha ha.
+}
+Rule TB32TeenGirl
+{
+	criteria ConceptTB32 IsTeenGirl
+	Response TB32TeenGirl
+}
+
+criterion "ConceptTB33" "Concept" "TB33" required
+Response TB33TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker PilotKilled foo:0 0.1 //How many pilots HAVE you shot, Zoey? Rough ballpark guess.
+}
+Rule TB33TeenGirl
+{
+	criteria ConceptTB33 IsTeenGirl
+	Response TB33TeenGirl
+}
+
+criterion "ConceptTB34" "Concept" "TB34" required
+Response TB34TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker CryingSupplies foo:0 0.1 //
+}
+Rule TB34TeenGirl
+{
+	criteria ConceptTB34 IsTeenGirl
+	Response TB34TeenGirl
+}
+
+criterion "ConceptTB35" "Concept" "TB35" required
+Response TB35TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker Surpriced foo:0 0.1 //Whoa. How'd you do that?
+}
+Rule TB35TeenGirl
+{
+	criteria ConceptTB35 IsTeenGirl
+	Response TB35TeenGirl
+}
+
+criterion "ConceptTB36" "Concept" "TB36" required
+Response TB36TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker Captain foo:0 0.1 //Aye, Aye Captain!
+}
+Rule TB36TeenGirl
+{
+	criteria ConceptTB36 IsTeenGirl
+	Response TB36TeenGirl
+}
+
+criterion "ConceptTB37" "Concept" "TB37" required
+Response TB37TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker BullShit foo:0 0.1 //BullShit
+}
+Rule TB37TeenGirl
+{
+	criteria ConceptTB37 IsTeenGirl
+	Response TB37TeenGirl
+}
+
+criterion "ConceptTB38" "Concept" "TB38" required
+Response TB38TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker Barn foo:0 0.1 //You born in a barn?
+}
+Rule TB38TeenGirl
+{
+	criteria ConceptTB38 IsTeenGirl
+	Response TB38TeenGirl
+}
+
+criterion "ConceptTB39" "Concept" "TB39" required
+Response TB39TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker Disgraceful foo:0 0.1 //Killed by vampires. What a goddamn disgrace.
+}
+Rule TB39TeenGirl
+{
+	criteria ConceptTB39 IsTeenGirl
+	Response TB39TeenGirl
+}
+
+criterion "ConceptTB40" "Concept" "TB40" required
+Response TB40TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker PrettyAwesome foo:0 0.1 //Yea, I'm pretty awesome.
+}
+Rule TB40TeenGirl
+{
+	criteria ConceptTB40 IsTeenGirl
+	Response TB40TeenGirl
+}
+
+criterion "ConceptTB41" "Concept" "TB41" required
+Response TB41TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker MerryChristmass foo:0 0.1 //Merry Christmass
+}
+Rule TB41TeenGirl
+{
+	criteria ConceptTB41 IsTeenGirl
+	Response TB41TeenGirl
+}
+
+criterion "ConceptTB42" "Concept" "TB42" required
+Response TB42TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker RocknRoll foo:0 0.1 //RocknRoll
+}
+Rule TB42TeenGirl
+{
+	criteria ConceptTB42 IsTeenGirl
+	Response TB42TeenGirl
+}
+
+criterion "ConceptTB43" "Concept" "TB43" required
+Response TB43TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker ComeToDaddy foo:0 0.1 //Come To Daddy
+}
+Rule TB43TeenGirl
+{
+	criteria ConceptTB43 IsTeenGirl
+	Response TB43TeenGirl
+}
+
+criterion "ConceptTB44" "Concept" "TB44" required
+Response TB44TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker AssHead foo:0 0.1 //Pull yer head outta yer ass.
+}
+Rule TB44TeenGirl
+{
+	criteria ConceptTB44 IsTeenGirl
+	Response TB44TeenGirl
+}
+
+criterion "ConceptTB45" "Concept" "TB45" required
+Response TB45TeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker Beef foo:0 0.1 //Which one of you jackasses just beefed?
+}
+Rule TB45TeenGirl
+{
+	criteria ConceptTB45 IsTeenGirl
+	Response TB45TeenGirl
+}

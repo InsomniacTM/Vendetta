@@ -1,0 +1,1057 @@
+//--------------------------------------------------------------------------------------------------------------
+// Custom Conversations
+// For L4D1 by Undergo
+//--------------------------------------------------------------------------------------------------------------
+// The concepts that trigger the conversations
+//--------------------------------------------------------------------------------------------------------------
+criterion "ClothingConvo_Suit" 		"Concept" 	"ClothingConvo_Suit" 	required
+criterion "TrainConvo_SailTrain" 	"Concept" 	"TrainConvo_SailTrain" 	required
+criterion "ConvoBombed" 		"Concept" 	"ConvoBombed" 		required
+criterion "ConvoAlley" 			"Concept" 	"ConvoAlley" 		required
+criterion "FartingConvoFrancis" 	"Concept" 	"FartingConvoFrancis" 	required
+criterion "FartingConvoZoey" 		"Concept" 	"FartingConvoZoey" 	required
+criterion "FartingConvoLouis" 		"Concept" 	"FartingConvoLouis" 	required
+criterion "VampiresConvo" 		"Concept" 	"VampiresConvo" 	required
+criterion "ColdConvo" 			"Concept" 	"ColdConvo" 		required
+
+//---------------------------------------------------------------------------------------------------------------
+//					Clothing convo
+//---------------------------------------------------------------------------------------------------------------
+
+Response ClothingConvo_B1
+{
+	scene "scenes/Biker/dlc1_c6m1_initialmeeting23.vcd" then Manager ClothingConvo_Parade foo:0 0.1 //Go to hell suit.
+}
+Rule ClothingConvo_B1
+{
+	criteria ClothingConvo_Suit IsBiker    
+	Response ClothingConvo_B1
+}
+
+Response ClothingConvoTriggerManager
+{
+	scene "scenes/Manager/Blank.vcd" then Biker ClothingConvo_Suit foo:0 0.1 //
+}
+Rule ClothingConvoTriggerManager
+{
+	criteria ClothingConvo_Suit IsManager
+	Response ClothingConvoTriggerManager
+}
+
+Response ClothingConvoTriggerNamVet
+{
+	scene "scenes/NamVet/Blank.vcd" then Biker ClothingConvo_Suit foo:0 0.1 //
+}
+Rule ClothingConvoTriggerNamVet
+{
+	criteria ClothingConvo_Suit IsNamVet
+	Response ClothingConvoTriggerNamVet
+}
+
+Response ClothingConvoTriggerTeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker ClothingConvo_Suit foo:0 0.1 //
+}
+Rule ClothingConvoTriggerTeenGirl
+{
+	criteria ClothingConvo_Suit IsTeenGirl
+	Response ClothingConvoTriggerTeenGirl
+}
+
+criterion "ClothingConvo_Parade" "Concept" "ClothingConvo_Parade" required
+Response ClothingConvo_M1
+{
+	scene "scenes/Manager/DLC2Intro09.vcd" then TeenGirl ClothingConvo_Charming foo:0 0.1 //That's FUNNY, Francis. Why don't you take your moustache, your little vest and your chaps and go find yourself a PARADE.
+}
+Rule ClothingConvo_M1
+{
+	criteria ClothingConvo_Parade IsManager    
+	Response ClothingConvo_M1
+}
+
+criterion "ClothingConvo_Charming" "Concept" "ClothingConvo_Charming" required
+Response ClothingConvo_T1
+{
+	scene "scenes/TeenGirl/ReactionPositive12.vcd" then Biker ClothingConvo_Awesome foo:0 0.1 //You are a charming beautiful man.
+}
+Rule ClothingConvo_T1
+{
+	criteria ClothingConvo_Charming IsTeenGirl    
+	Response ClothingConvo_T1
+}
+
+criterion "ClothingConvo_Awesome" "Concept" "ClothingConvo_Awesome" required
+Response ClothingConvo_B2
+{
+	scene "scenes/Biker/YouAreWelcome10.vcd" then Manager ClothingConvo_Joking foo:0 0.1 //Yea, I'm pretty awesome. 
+}
+Rule ClothingConvo_B2
+{
+	criteria ClothingConvo_Awesome IsBiker    
+	Response ClothingConvo_B2
+}
+
+criterion "ClothingConvo_Joking" "Concept" "ClothingConvo_Joking" required
+Response ClothingConvo_M2
+{
+	scene "scenes/Manager/GenericResponses03.vcd" then Biker ClothingConvo_Taste foo:0 0.1 //You're joking, right?
+}
+Rule ClothingConvo_M2
+{
+	criteria ClothingConvo_Joking IsManager    
+	Response ClothingConvo_M2
+}
+
+criterion "ClothingConvo_Taste" "Concept" "ClothingConvo_Taste" required
+Response ClothingConvo_B3
+{
+	scene "scenes/Biker/dlc1_c6m3_finalechat31.vcd" then Manager ClothingConvo_Uhuh foo:0 0.1 //What? She's a woman of taste.
+	scene "scenes/Biker/dlc1_c6m3_finalechat32.vcd" then Manager ClothingConvo_Uhuh foo:0 0.1 //What? Obviously she's a woman of taste.
+}
+Rule ClothingConvo_B3
+{
+	criteria ClothingConvo_Taste IsBiker    
+	Response ClothingConvo_B3
+}
+
+Criterion "ClothingConvo_Uhuh" "Concept" "ClothingConvo_Uhuh" required
+Response ClothingConvo_M3
+{ 
+	scene "scenes/Manager/No02.vcd" then TeenGirl ClothingConvo_Dick foo:0 0.1 //Uh uh.
+}
+Rule ClothingConvo_M3
+{
+	criteria ClothingConvo_Uhuh IsManager    
+	Response ClothingConvo_M3
+}
+
+criterion "ClothingConvo_Dick" "Concept" "ClothingConvo_Dick" required
+Response ClothingConvo_T2
+{
+	scene "scenes/TeenGirl/worldairport05npc07.vcd" then Biker ClothingConvo_Turd foo:0 0.1 //What a dick
+}
+Rule ClothingConvo_T2
+{
+	criteria ClothingConvo_Dick IsTeenGirl    
+	Response ClothingConvo_T2
+}
+
+criterion "ClothingConvo_Turd" "Concept" "ClothingConvo_Turd" required
+Response ClothingConvo_B4
+{
+	scene "scenes/Biker/dlc1_c6m3_finalechat20.vcd" then Biker ClothingConvo_Tie foo:0 0.5 //At least I don't have a turd on my suit.
+}
+Rule ClothingConvo_B4
+{
+	criteria ClothingConvo_Turd IsBiker
+	Response ClothingConvo_B4
+}
+
+criterion "ClothingConvo_Tie" "Concept" "ClothingConvo_Tie" required
+Response ClothingConvo_B5
+{
+	scene "scenes/Biker/DLC2Intro26.vcd" then NamVet ClothingConvo_ShutUp foo:0 0.1 //You still wearin' that tie, Louis? What, you got a meeting? Bah ha ha.
+}
+Rule ClothingConvo_B5
+{
+	criteria ClothingConvo_Tie IsBiker    
+	Response ClothingConvo_B5
+}
+
+criterion "ClothingConvo_ShutUp" "Concept" "ClothingConvo_ShutUp" required
+Response ClothingConvo_N
+{
+	scene "scenes/NamVet/C6DLC3INTRO02.vcd"  //Shut up, Francis.
+}
+Rule ClothingConvo_N
+{
+	criteria ClothingConvo_ShutUp IsNamVet 
+	Response ClothingConvo_N
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// 					Traincar convo
+//--------------------------------------------------------------------------------------------------------------
+
+Response TrainConvo_B1
+{
+	scene "scenes/Biker/C6DLC3TANKINTRAINYARD02.vcd" then Manager TrainConvo_TankTrain foo:0 0.1 //Hey, Bill, I think there's a sailboat in the train.
+}
+Rule TrainConvo_B1
+{
+	criteria TrainConvo_SailTrain IsBiker IsEveryoneAlive    
+	Response TrainConvo_B1
+}
+
+Response TrainConvoTriggerManager
+{
+	scene "scenes/Manager/Blank.vcd" then Biker TrainConvo_SailTrain foo:0 0.1 //
+}
+Rule TrainConvoTriggerManager
+{
+	criteria TrainConvo_SailTrain IsManager
+	Response TrainConvoTriggerManager
+}
+
+Response TrainConvoTriggerNamVet
+{
+	scene "scenes/NamVet/Blank.vcd" then Biker TrainConvo_SailTrain foo:0 0.1 //
+}
+Rule TrainConvoTriggerNamVet
+{
+	criteria TrainConvo_SailTrain IsNamVet
+	Response TrainConvoTriggerNamVet
+}
+
+Response TrainConvoTriggerTeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker TrainConvo_SailTrain foo:0 0.1 //
+}
+Rule TrainConvoTriggerTeenGirl
+{
+	criteria TrainConvo_SailTrain IsTeenGirl
+	Response TrainConvoTriggerTeenGirl
+}
+
+criterion "TrainConvo_TankTrain" "Concept" "TrainConvo_TankTrain" required
+Response TrainConvo_M1
+{
+	scene "scenes/Manager/C6DLC3TANKINTRAINYARD02.vcd" then Biker TrainConvo_Puppy foo:0 0.1 //Man, a tank in a train.
+}
+Rule TrainConvo_M1
+{
+	criteria TrainConvo_TankTrain IsManager    
+	Response TrainConvo_M1
+}
+
+criterion "TrainConvo_Puppy" "Concept" "TrainConvo_Puppy" required
+Response TrainConvo_B2
+{
+	scene "scenes/Biker/C6DLC3TANKINTRAINYARD05.vcd" then Manager TrainConvo_WhoMe foo:0 0.1 //Hey Louis, I don't think it's a tank in there.  It sounds like a puppy.  You should stand closer.
+	scene "scenes/Biker/C6DLC3TANKINTRAINYARD06.vcd" then Manager TrainConvo_WhoMe foo:0 0.1 //Hey Louis, I think there's a puppy in there.  You should let it out.
+}
+Rule TrainConvo_B2
+{
+	criteria TrainConvo_Puppy IsBiker    
+	Response TrainConvo_B2
+}
+
+criterion "TrainConvo_WhoMe" "Concept" "TrainConvo_WhoMe" required
+Response TrainConvo_M2
+{
+	scene "scenes/Manager/C6DLC3TANKINTRAINYARD05.vcd" then TeenGirl TrainConvo_ImAGirl foo:0 0.1 //Who? Me?
+	scene "scenes/Manager/C6DLC3TANKINTRAINYARD06.vcd" then TeenGirl TrainConvo_ImAGirl foo:0 0.1 //Who? Me?
+}
+Rule TrainConvo_M2
+{
+	criteria TrainConvo_WhoMe IsManager    
+	Response TrainConvo_M2
+}
+
+criterion "TrainConvo_ImAGirl" "Concept" "TrainConvo_ImAGirl" required
+Response TrainConvo_T1
+{
+	scene "scenes/TeenGirl/C6DLC3TANKINTRAINYARD10.vcd" then TeenGirl TrainConvo_OpenDoor foo:0 1.0 //So, I'm a girl, right? You guys wouldn't make a lady open up a deathtrap, right?
+}
+Rule TrainConvo_T1
+{
+	criteria TrainConvo_ImAGirl IsTeenGirl    
+	Response TrainConvo_T1
+}
+
+criterion "TrainConvo_OpenDoor" "Concept" "TrainConvo_OpenDoor" required
+Response TrainConvo_T2
+{
+	scene "scenes/TeenGirl/C6DLC3TANKINTRAINYARD02.vcd" then TeenGirl TrainConvo_BlaBla foo:0 1.0 //So... who's gonna open the door?
+}
+Rule TrainConvo_T2
+{
+	criteria TrainConvo_OpenDoor IsTeenGirl    
+	Response TrainConvo_T2
+}
+
+criterion "TrainConvo_BlaBla" "Concept" "TrainConvo_BlaBla" required
+Response TrainConvo_T3
+{
+	scene "scenes/TeenGirl/C6DLC3TANKINTRAINYARD06.vcd" then Biker TrainConvo_What foo:0 0.1 //Hey Francis. Guywhoopensthetraindoorsayswhat?
+}
+Rule TrainConvo_T3
+{
+	criteria TrainConvo_BlaBla IsTeenGirl    
+	Response TrainConvo_T3
+}
+
+criterion "TrainConvo_What" "Concept" "TrainConvo_What" required
+Response TrainConvo_B3
+{
+	scene "scenes/Biker/C6DLC3TANKINTRAINYARD12.vcd" then Biker TrainConvo_Sui foo:0 0.5 //Yeah, no probl - Whoa, hey, wait a minute.
+}
+Rule TrainConvo_B3
+{
+	criteria TrainConvo_What IsBiker    
+	Response TrainConvo_B3
+}
+
+criterion "TrainConvo_Sui" "Concept" "TrainConvo_Sui" required
+Response TrainConvo_B4
+{
+	scene "scenes/Biker/C6DLC3JUMPINGOFFBRIDGE03.vcd" then TeenGirl TrainConvo_Pal foo:0 0.1 //I hate suicide missions.
+}
+Rule TrainConvo_B4
+{
+	criteria TrainConvo_Sui IsBiker    
+	Response TrainConvo_B4
+}
+
+criterion "TrainConvo_Pal" "Concept" "TrainConvo_Pal" required
+Response TrainConvo_T4
+{
+	scene "scenes/TeenGirl/C6DLC3TANKINTRAINYARD07.vcd" then Biker TrainConvo_IHate foo:0 0.1 //Hey, Francis. Be a pal and open that door.
+	scene "scenes/TeenGirl/C6DLC3TANKINTRAINYARD08.vcd" then Biker TrainConvo_IHate foo:0 0.1 //Hey, Francis. Be a pal and open that door.
+}
+Rule TrainConvo_T4
+{
+	criteria TrainConvo_Pal IsTeenGirl    
+	Response TrainConvo_T4
+}
+
+criterion "TrainConvo_IHate" "Concept" "TrainConvo_IHate" required
+Response TrainConvo_B5
+{
+	scene "scenes/Biker/C6DLC3ZOEYDIES04.vcd" then NamVet TrainConvo_Hate foo:0 0.1 //I hate this!
+}
+Rule TrainConvo_B5
+{
+	criteria TrainConvo_IHate IsBiker    
+	Response TrainConvo_B5
+}
+
+criterion "TrainConvo_Hate" "Concept" "TrainConvo_Hate" required
+Response TrainConvo_N
+{
+	scene "scenes/NamVet/Generic03.vcd" then Biker TrainConvo_Love foo:0 0.1 //Francis, is there anything you don't hate?
+}
+Rule TrainConvo_N
+{
+	criteria TrainConvo_Hate IsNamVet    
+	Response TrainConvo_N
+}
+
+criterion "TrainConvo_Love" "Concept" "TrainConvo_Love" required
+Response TrainConvo_B6
+{
+	scene "scenes/Biker/WorldFarmHouse0528.vcd" //I LOVE the goddamn army! 
+}
+Rule TrainConvo_B6
+{
+	criteria TrainConvo_Love IsBiker    
+	Response TrainConvo_B6
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// 					Bombed convo
+//--------------------------------------------------------------------------------------------------------------
+
+Response Bombed_B1
+{
+	scene "scenes/Biker/WorldAirport0315.vcd" then NamVet BombedBill foo:0 .2 //What idiot bombed the airport?
+	scene "scenes/Biker/WorldAirport0321.vcd" then NamVet BombedBill foo:0 .2 //What friggin' idiot bombed the airport?
+}
+Rule Bombed_B1
+{
+	criteria ConvoBombed IsBiker IsNamVetAlive    
+	Response Bombed_B1
+}
+
+Response BombedTriggerManager
+{
+	scene "scenes/Manager/Blank.vcd" then Biker ConvoBombed foo:0 0.1 //
+}
+Rule BombedTriggerManager
+{
+	criteria ConvoBombed IsManager
+	Response BombedTriggerManager
+}
+
+Response BombedTriggerNamVet
+{
+	scene "scenes/NamVet/Blank.vcd" then Biker ConvoBombed foo:0 0.1 //
+}
+Rule BombedTriggerNamVet
+{
+	criteria ConvoBombed IsNamVet
+	Response BombedTriggerNamVet
+}
+
+Response BombedTriggerTeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker ConvoBombed foo:0 0.1 //
+}
+Rule BombedTriggerTeenGirl
+{
+	criteria ConvoBombed IsTeenGirl
+	Response BombedTriggerTeenGirl
+}
+
+criterion "BombedBill" "Concept" "BombedBill" required
+Response Bombed_N
+{
+	scene "scenes/NamVet/WorldAirport0403.vcd" then Manager BombedBakadesu foo:0 .2 //Bombed!
+}
+Rule Bombed_N
+{
+	criteria BombedBill IsNamVet    
+	Response Bombed_N
+}
+
+criterion "BombedBakadesu" "Concept" "BombedBakadesu" required
+Response Bombed_M
+{
+	scene "scenes/Manager/C6DLC3FIRSTSAFEROOM03.vcd" then Biker BombedNice foo:0 .1 //Bill's an idiot.
+}
+Rule Bombed_M
+{
+	criteria BombedBakadesu IsManager    
+	Response Bombed_M
+}
+
+criterion "BombedNice" "Concept" "BombedNice" required
+Response Bombed_B2
+{
+	scene "scenes/Biker/C6DLC3FIRSTSAFEROOM04.vcd" //Nice.
+}
+Rule Bombed_B2
+{
+	criteria BombedNice IsBiker    
+	Response Bombed_B2
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// 					Alley convo
+//--------------------------------------------------------------------------------------------------------------
+
+Response ConvoAlley_B1
+{
+	scene "scenes/Biker/DLC2M1Directional10.vcd" then Manager ConvoAlley_Born foo:0 0.1 //Sayyy. An alley!
+}
+Rule ConvoAlley_B1
+{
+	criteria ConvoAlley IsBiker IsManagerAlive    
+	Response ConvoAlley_B1
+}
+
+Response ConvoAlleyTriggerManager
+{
+	scene "scenes/Manager/Blank.vcd" then Biker ConvoAlley foo:0 0.1 //
+}
+Rule ConvoAlleyTriggerManager
+{
+	criteria ConvoAlley IsManager
+	Response ConvoAlleyTriggerManager
+}
+
+Response ConvoAlleyTriggerNamVet
+{
+	scene "scenes/NamVet/Blank.vcd" then Biker ConvoAlley foo:0 0.1 //
+}
+Rule ConvoAlleyTriggerNamVet
+{
+	criteria ConvoAlley IsNamVet
+	Response ConvoAlleyTriggerNamVet
+}
+
+Response ConvoAlleyTriggerTeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker ConvoAlley foo:0 0.1 //
+}
+Rule ConvoAlleyTriggerTeenGirl
+{
+	criteria ConvoAlley IsTeenGirl
+	Response ConvoAlleyTriggerTeenGirl
+}
+
+criterion "ConvoAlley_Born" "Concept" "ConvoAlley_Born" required
+Response ConvoAlley_M
+{
+	scene "scenes/Manager/DLC2Alley01.vcd" then Biker ConvoAlley_DeathWish foo:0 0.1 //Hey, Francis. Wasn't this the alley you were born in?
+}
+Rule ConvoAlley_M
+{
+	criteria ConvoAlley_Born IsManager    
+	Response ConvoAlley_M
+}
+
+criterion "ConvoAlley_DeathWish" "Concept" "ConvoAlley_DeathWish" required
+Response ConvoAlley_B2
+{
+	scene "scenes/Biker/DLC2Alley01.vcd" then NamVet ConvoAlley_Home foo:0 0.1 //Yeah ha ha ha. This the one you wanna die in?
+}
+Rule ConvoAlley_B2
+{
+	criteria ConvoAlley_DeathWish IsBiker    
+	Response ConvoAlley_B2
+}
+
+criterion "ConvoAlley_Home" "Concept" "ConvoAlley_Home" required
+Response ConvoAlley_N
+{
+	scene "scenes/NamVet/WorldFarmHouse0102.vcd" then Biker ConvoAlley_GoToHell foo:0 0.1 //Francis, this look like home to you?
+}
+Rule ConvoAlley_N
+{
+	criteria ConvoAlley_Home IsNamVet    
+	Response ConvoAlley_N
+}
+
+criterion "ConvoAlley_GoToHell" "Concept" "ConvoAlley_GoToHell" required
+Response ConvoAlley_B3
+{
+	scene "scenes/Biker/GenericResponses12.vcd" //Go to hell.
+}
+Rule ConvoAlley_B3
+{
+	criteria ConvoAlley_GoToHell IsBiker    
+	Response ConvoAlley_B3
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// 					Farting convo 1
+//--------------------------------------------------------------------------------------------------------------
+
+Response FartingConvoFrancis_B1
+{
+	scene "scenes/Biker/WorldHospital0403.vcd" then TeenGirl FartingConvo_Francis foo:0 0.1 //Which one of you jackasses just beefed?
+}
+Rule FartingConvoFrancis_B1
+{
+	criteria FartingConvoFrancis IsBiker IsTeenGirlAlive    
+	Response FartingConvoFrancis_B1
+}
+
+Response FartingConvoFrancisTriggerManager
+{
+	scene "scenes/Manager/Blank.vcd" then Biker FartingConvoFrancis foo:0 0.1 //
+}
+Rule FartingConvoFrancisTriggerManager
+{
+	criteria FartingConvoFrancis IsManager
+	Response FartingConvoFrancisTriggerManager
+}
+
+Response FartingConvoFrancisTriggerNamVet
+{
+	scene "scenes/NamVet/Blank.vcd" then Biker FartingConvoFrancis foo:0 0.1 //
+}
+Rule FartingConvoFrancisTriggerNamVet
+{
+	criteria FartingConvoFrancis IsNamVet
+	Response FartingConvoFrancisTriggerNamVet
+}
+
+Response FartingConvoFrancisTriggerTeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker FartingConvoFrancis foo:0 0.1 //
+}
+Rule FartingConvoFrancisTriggerTeenGirl
+{
+	criteria FartingConvoFrancis IsTeenGirl
+	Response FartingConvoFrancisTriggerTeenGirl
+}
+
+criterion "FartingConvo_Francis" "Concept" "FartingConvo_Francis" required
+Response FartingConvoFrancis_T1
+{
+	scene "scenes/TeenGirl/Namefrancis03.vcd" then Biker FartingConvoFrancis_Sorry foo:0 0.1 //Francis!
+}
+Rule FartingConvoFrancis_T1
+{
+	criteria FartingConvo_Francis IsTeenGirl    
+	Response FartingConvoFrancis_T1
+}
+
+criterion "FartingConvoFrancis_Sorry" "Concept" "FartingConvoFrancis_Sorry" required
+Response FartingConvoFrancis_B2
+{
+	scene "scenes/Biker/Sorry14.vcd"  then NamVet FartingConvoFrancis_Sewer foo:0 0.1 //
+}
+Rule FartingConvoFrancis_B2
+{
+	criteria FartingConvoFrancis_Sorry IsBiker    
+	Response FartingConvoFrancis_B2
+}
+
+criterion "FartingConvoFrancis_Sewer" "Concept" "FartingConvoFrancis_Sewer" required
+Response FartingConvoFrancis_N1
+{
+	scene "scenes/NamVet/WorldHospital0316.vcd" then TeenGirl FartingConvoFrancis_Shoes foo:0 0.1 //Francis, is that you or the sewer?
+}
+Rule FartingConvoFrancis_N1
+{
+	criteria FartingConvoFrancis_Sewer IsNamVet    
+	Response FartingConvoFrancis_N1
+}
+
+criterion "FartingConvoFrancis_Shoes" "Concept" "FartingConvoFrancis_Shoes" required
+Response FartingConvoFrancis_T2
+{
+	scene "scenes/TeenGirl/WorldAirport0409.vcd" then Biker FartingConvoFrancis_Beard foo:0 0.1 //Whatever you do, Francis, please don't take off your shoes.
+}
+Rule FartingConvoFrancis_T2
+{
+	criteria FartingConvoFrancis_Shoes IsTeenGirl    
+	Response FartingConvoFrancis_T2
+}
+
+criterion "FartingConvoFrancis_Beard" "Concept" "FartingConvoFrancis_Beard" required
+Response FartingConvoFrancis_B3
+{
+	scene "scenes/Biker/C6DLC3INTANKTRAINCAR03.vcd" then NamVet FartingConvoFrancis_Worse foo:0 0.5 //God. Smells like Bill's beard in here
+}
+Rule FartingConvoFrancis_B3
+{
+	criteria FartingConvoFrancis_Beard IsBiker    
+	Response FartingConvoFrancis_B3
+}
+
+criterion "FartingConvoFrancis_Worse" "Concept" "FartingConvoFrancis_Worse" required
+Response FartingConvoFrancis_N3
+{
+	scene "scenes/NamVet/WorldHospital0315.vcd" //I've smelled worse.
+}
+Rule FartingConvoFrancis_N3
+{
+	criteria FartingConvoFrancis_Worse IsNamVet    
+	Response FartingConvoFrancis_N3
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// 					Farting convo 2
+//--------------------------------------------------------------------------------------------------------------
+
+Response FartingConvoZoey_B1
+{
+	scene "scenes/Biker/WorldHospital0403.vcd" then TeenGirl FartingConvoZoey_Farting foo:0 0.1 //Which one of you jackasses just beefed?
+}
+Rule FartingConvoZoey_B1
+{
+	criteria FartingConvoZoey IsBiker IsTeenGirlAlive    
+	Response FartingConvoZoey_B1
+}
+
+Response FartingConvoZoeyTriggerManager
+{
+	scene "scenes/Manager/Blank.vcd" then Biker FartingConvoZoey foo:0 0.1 //
+}
+Rule FartingConvoZoeyTriggerManager
+{
+	criteria FartingConvoZoey IsManager
+	Response FartingConvoZoeyTriggerManager
+}
+
+Response FartingConvoZoeyTriggerNamVet
+{
+	scene "scenes/NamVet/Blank.vcd" then Biker FartingConvoZoey foo:0 0.1 //
+}
+Rule FartingConvoZoeyTriggerNamVet
+{
+	criteria FartingConvoZoey IsNamVet
+	Response FartingConvoZoeyTriggerNamVet
+}
+
+Response FartingConvoZoeyTriggerTeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker FartingConvoZoey foo:0 0.1 //
+}
+Rule FartingConvoZoeyTriggerTeenGirl
+{
+	criteria FartingConvoZoey IsTeenGirl
+	Response FartingConvoZoeyTriggerTeenGirl
+}
+
+criterion "FartingConvoZoey_Farting" "Concept" "FartingConvoZoey_Farting" required
+Response FartingConvoZoey_T1
+{
+	scene "scenes/TeenGirl/DLC2GasTanks02.vcd" then Biker FartingConvoZoey_Uncalled foo:0 0.1 //Heh. Farting.
+}
+Rule FartingConvoZoey_T1
+{
+	criteria FartingConvoZoey_Farting IsTeenGirl    
+	Response FartingConvoZoey_T1
+}
+
+criterion "FartingConvoZoey_Uncalled" "Concept" "FartingConvoZoey_Uncalled" required
+Response FartingConvoZoey_B2
+{
+	scene "scenes/Biker/Generic04.vcd" then TeenGirl FartingConvoZoey_FreshAir foo:0 0.2 //Oh hey, that is uncalled for!
+	scene "scenes/Biker/DLC1_C6M1_InitialMeeting27.vcd" then TeenGirl FartingConvoZoey_FreshAir foo:0 0.2 //HEY!
+	scene "scenes/Biker/DLC1_C6M1_InitialMeeting28.vcd" then TeenGirl FartingConvoZoey_FreshAir foo:0 0.2 //HEY!
+}
+Rule FartingConvoZoey_B2
+{
+	criteria FartingConvoZoey_Uncalled IsBiker    
+	Response FartingConvoZoey_B2
+}
+
+criterion "FartingConvoZoey_FreshAir" "Concept" "FartingConvoZoey_FreshAir" required
+Response FartingConvoZoey_T2
+{
+	scene "scenes/TeenGirl/WorldSmallTown0205.vcd" then all FartingConvoZoey_Zoey foo:0 0.1 //Fresh air!
+}
+Rule FartingConvoZoey_T2
+{
+	criteria FartingConvoZoey_FreshAir IsTeenGirl    
+	Response FartingConvoZoey_T2
+}
+
+criterion "FartingConvoZoey_Zoey" "Concept" "FartingConvoZoey_Zoey" required
+Response FartingConvoZoey_M
+{
+	scene "scenes/Manager/Namezoey01.vcd"  //Zoey!
+}
+Rule FartingConvoZoey_M
+{
+	criteria FartingConvoZoey_Zoey IsManager    
+	Response FartingConvoZoey_M
+}
+
+Response FartingConvoZoey_B3
+{
+	scene "scenes/Biker/Namezoey01.vcd" //Zoey!
+}
+Rule FartingConvoZoey_B3
+{
+	criteria FartingConvoZoey_Zoey IsBiker IsTeenGirlAlive    
+	Response FartingConvoZoey_B3
+}
+
+Response FartingConvoZoey_N
+{
+	scene "scenes/NamVet/Namezoey01.vcd" then TeenGirl FartingConvoZoey_Laugh foo:0 .5 //Zoey!
+}
+Rule FartingConvoZoey_N
+{
+	criteria FartingConvoZoey_Zoey IsNamVet    
+	Response FartingConvoZoey_N
+}
+
+criterion "FartingConvoZoey_Laugh" "Concept" "FartingConvoZoey_Laugh" required
+Response FartingConvoZoey_T3
+{
+	scene "scenes/TeenGirl/Laughter01.vcd" //
+	scene "scenes/TeenGirl/Laughter08.vcd" //
+	scene "scenes/TeenGirl/Laughter15.vcd" //
+}
+Rule FartingConvoZoey_T3
+{
+	criteria FartingConvoZoey_Laugh IsTeenGirl    
+	Response FartingConvoZoey_T3
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// 					Farting convo 3
+//--------------------------------------------------------------------------------------------------------------
+
+Response FartingConvoLouis_B1
+{
+	scene "scenes/Biker/WorldHospital0403.vcd" then Manager FartingConvoLouis_Farting foo:0 0.1 //Which one of you jackasses just beefed?
+}
+Rule FartingConvoLouis_B1
+{
+	criteria FartingConvoLouis IsBiker IsManagerAlive
+	Response FartingConvoLouis_B1
+}
+
+Response FartingConvoLouisTriggerManager
+{
+	scene "scenes/Manager/Blank.vcd" then Biker FartingConvoLouis foo:0 0.1 //
+}
+Rule FartingConvoLouisTriggerManager
+{
+	criteria FartingConvoLouis IsManager
+	Response FartingConvoLouisTriggerManager
+}
+
+Response FartingConvoLouisTriggerNamVet
+{
+	scene "scenes/NamVet/Blank.vcd" then Biker FartingConvoLouis foo:0 0.1 //
+}
+Rule FartingConvoLouisTriggerNamVet
+{
+	criteria FartingConvoLouis IsNamVet
+	Response FartingConvoLouisTriggerNamVet
+}
+
+Response FartingConvoLouisTriggerTeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker FartingConvoLouis foo:0 0.1 //
+}
+Rule FartingConvoLouisTriggerTeenGirl
+{
+	criteria FartingConvoLouis IsTeenGirl
+	Response FartingConvoLouisTriggerTeenGirl
+}
+
+criterion "FartingConvoLouis_Farting" "Concept" "FartingConvoLouis_Farting" required
+Response FartingConvoLouis_M
+{
+	scene "scenes/Manager/DLC2M2Misc02.vcd" then Biker FartingConvoLouis_Uncalled foo:0 0.1 //Heh. Farting...
+}
+Rule FartingConvoLouis_M
+{
+	criteria FartingConvoLouis_Farting IsManager
+	Response FartingConvoLouis_M
+}
+
+criterion "FartingConvoLouis_Uncalled" "Concept" "FartingConvoLouis_Uncalled" required
+Response FartingConvoLouis_B2
+{
+	scene "scenes/Biker/Generic04.vcd" then TeenGirl FartingConvoLouis_FreshAir foo:0 0.2 //Oh hey, that is uncalled for!
+	scene "scenes/Biker/DLC1_C6M1_InitialMeeting27.vcd" then TeenGirl FartingConvoLouis_FreshAir foo:0 0.2 //HEY!
+	scene "scenes/Biker/DLC1_C6M1_InitialMeeting28.vcd" then TeenGirl FartingConvoLouis_FreshAir foo:0 0.2 //HEY!
+}
+Rule FartingConvoLouis_B2
+{
+	criteria FartingConvoLouis_Uncalled IsBiker 
+	Response FartingConvoLouis_B2
+}
+
+criterion "FartingConvoLouis_FreshAir" "Concept" "FartingConvoLouis_FreshAir" required
+Response FartingConvoLouis_T
+{
+	scene "scenes/TeenGirl/WorldSmallTown0205.vcd" then NamVet FartingConvoLouis_Disgusted foo:0 0.1 //Fresh air!
+}
+Rule FartingConvoLouis_T
+{
+	criteria FartingConvoLouis_FreshAir IsTeenGirl
+	Response FartingConvoLouis_T
+}
+
+criterion "FartingConvoLouis_Disgusted" "Concept" "FartingConvoLouis_Disgusted" required
+Response FartingConvoLouis_N
+{
+	scene "scenes/NamVet/Reactiondisgusted05.vcd" //
+}
+Rule FartingConvoLouis_N
+{
+	criteria FartingConvoLouis_Disgusted IsNamVet
+	Response FartingConvoLouis_N
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// 					Vampires Convo
+//--------------------------------------------------------------------------------------------------------------
+
+Response VampiresConvo_B1
+{
+	scene "scenes/Biker/dlc1_c6m1_initialmeeting39.vcd" then Any VampiresConvo_What foo:0 0.2 //Are any of you vampires?
+}
+Rule VampiresConvo_B1
+{
+	criteria VampiresConvo IsBiker
+	Response VampiresConvo_B1
+}
+
+Response VampiresConvoTriggerManager
+{
+	scene "scenes/Manager/Blank.vcd" then Biker VampiresConvo foo:0 0.1 //
+}
+Rule VampiresConvoTriggerManager
+{
+	criteria VampiresConvo IsManager
+	Response VampiresConvoTriggerManager
+}
+
+Response VampiresConvoTriggerNamVet
+{
+	scene "scenes/NamVet/Blank.vcd" then Biker VampiresConvo foo:0 0.1 //
+}
+Rule VampiresConvoTriggerNamVet
+{
+	criteria VampiresConvo IsNamVet
+	Response VampiresConvoTriggerNamVet
+}
+
+Response VampiresConvoTriggerTeenGirl
+{
+	scene "scenes/TeenGirl/Blank.vcd" then Biker VampiresConvo foo:0 0.1 //
+}
+Rule VampiresConvoTriggerTeenGirl
+{
+	criteria VampiresConvo IsTeenGirl
+	Response VampiresConvoTriggerTeenGirl
+}
+
+criterion "VampiresConvo_What" "Concept" "VampiresConvo_What" required
+Response VampiresConvo_T
+{
+	scene "scenes/TeenGirl/GenericResponses02.vcd" then Biker VampiresConvo_Vamps foo:0 0.2 // [Disbelief] What?
+}
+Rule VampiresConvo_T
+{
+	criteria VampiresConvo_What IsTeenGirl
+	Response VampiresConvo_T
+}
+
+Response VampiresConvo_N
+{
+	scene "scenes/NamVet/GenericResponses02.vcd" then Biker VampiresConvo_Vamps foo:0 0.2 // [Disbelief] What?
+}
+Rule VampiresConvo_N
+{
+	criteria VampiresConvo_What IsNamVet
+	Response VampiresConvo_N
+}
+
+criterion "VampiresConvo_Vamps" "Concept" "VampiresConvo_Vamps" required
+Response VampiresConvo_B2
+{
+	scene "scenes/Biker/dlc1_c6m1_initialmeeting41.vcd" then Manager VampiresConvo_NegVamps foo:0 0.1 //Louis! I told you, they were vampires!
+}
+Rule VampiresConvo_B2
+{
+	criteria VampiresConvo_Vamps IsBiker
+	Response VampiresConvo_B2
+}
+
+criterion "VampiresConvo_NegVamps" "Concept" "VampiresConvo_NegVamps" required
+Response VampiresConvo_M1
+{
+	scene "scenes/Manager/DLC1_C6M1_InitialMeeting01.vcd" then Manager VampiresConvo_Blank foo:0 0.1 //No there aren't Francis
+}
+Rule VampiresConvo_M1
+{
+	criteria VampiresConvo_NegVamps IsManager
+	Response VampiresConvo_M1
+}
+
+criterion "VampiresConvo_Blank" "Concept" "VampiresConvo_Blank" required
+Response VampiresConvo_M2
+{
+	scene "scenes/Manager/Blank.vcd" then Biker VampiresConvo_GoddamnVamps foo:0 0.1 //
+}
+Rule VampiresConvo_M2
+{
+	criteria VampiresConvo_Blank IsManager
+	Response VampiresConvo_M2
+}
+
+criterion "VampiresConvo_GoddamnVamps" "Concept" "VampiresConvo_GoddamnVamps" required
+Response VampiresConvo_B3
+{
+	scene "scenes/Biker/dlc1_c6m1_initialmeeting42.vcd" //I'm not talking to any goddamn vampires.
+}
+Rule VampiresConvo_B3
+{
+	criteria VampiresConvo_GoddamnVamps IsBiker
+	Response VampiresConvo_B3
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// 					Cold Convo
+//--------------------------------------------------------------------------------------------------------------
+
+Response ColdConvo_T1
+{
+	scene "scenes/TeenGirl/DLC1_CommunityL4D104.vcd" then Manager ColdConvo_Cold foo:0 0.1 //Great, snow.
+}
+Rule ColdConvo_T1
+{
+	criteria ColdConvo IsTeenGirl    
+	Response ColdConvo_T1
+}
+
+Response ColdConvoTriggerManager
+{
+	scene "scenes/Manager/Blank.vcd" then TeenGirl ColdConvo foo:0 0.1 //
+}
+Rule ColdConvoTriggerManager
+{
+	criteria ColdConvo IsManager
+	Response ColdConvoTriggerManager
+}
+
+Response ColdConvoTriggerNamVet
+{
+	scene "scenes/NamVet/Blank.vcd" then TeenGirl ColdConvo foo:0 0.1 //
+}
+Rule ColdConvoTriggerNamVet
+{
+	criteria ColdConvo IsNamVet
+	Response ColdConvoTriggerNamVet
+}
+
+Response ColdConvoTriggerBiker
+{
+	scene "scenes/Biker/Blank.vcd" then TeenGirl ColdConvo foo:0 0.1 //
+}
+Rule ColdConvoTriggerBiker
+{
+	criteria ColdConvo IsBiker
+	Response ColdConvoTriggerBiker
+}
+
+criterion "ColdConvo_Cold" "Concept" "ColdConvo_Cold" required
+Response ColdConvo_M1
+{
+	scene "scenes/Manager/DLC1_CommunityL4D101.vcd" then Biker ColdConvo_Snow foo:0 0.1 //It sure is cold!
+}
+Rule ColdConvo_M1
+{
+	criteria ColdConvo_Cold IsManager    
+	Response ColdConvo_M1
+}
+
+criterion "ColdConvo_Snow" "Concept" "ColdConvo_Snow" required
+Response ColdConvo_B1
+{
+	scene "scenes/Biker/DLC1_CommunityL4D103.vcd" then TeenGirl ColdConvo_Hate foo:0 0.1 //I hate the snow.
+}
+Rule ColdConvo_B1
+{
+	criteria ColdConvo_Snow IsBiker    
+	Response ColdConvo_B1
+}
+
+criterion "ColdConvo_Hate" "Concept" "ColdConvo_Hate" required
+Response ColdConvo_T2
+{
+	scene "scenes/TeenGirl/DLC1_CommunityL4D105.vcd" then Biker ColdConvo_Cold foo:0 0.1 //Francis, what do you hate more the snow or the cold?
+}
+Rule ColdConvo_T2
+{
+	criteria ColdConvo_Hate IsTeenGirl    
+	Response ColdConvo_T2
+}
+
+//criterion "ColdConvo_Cold" "Concept" "ColdConvo_Cold" required
+Response ColdConvo_B2
+{
+	scene "scenes/Biker/DLC1_CommunityL4D104.vcd" then Manager ColdConvo_Warm foo:0 0.1 //I hate the cold.
+}
+Rule ColdConvo_B2
+{
+	criteria ColdConvo_Cold IsBiker    
+	Response ColdConvo_B2
+}
+
+criterion "ColdConvo_Warm" "Concept" "ColdConvo_Warm" required
+Response ColdConvo_M2
+{
+	scene "scenes/Manager/DLC1_CommunityL4D102.vcd" then Biker ColdConvo_Feelings foo:0 0.1 //I bet it's gonna warm up real soon!
+}
+Rule ColdConvo_M2
+{
+	criteria ColdConvo_Warm IsManager    
+	Response ColdConvo_M2
+}
+
+criterion "ColdConvo_Feelings" "Concept" "ColdConvo_Feelings" required
+Response ColdConvo_B3
+{
+	scene "scenes/Biker/C6DLC3SECONDSAFEROOM02.vcd" then NamVet Cold foo:0 0.1 //I hate your good feelings.
+}
+Rule ColdConvo_B3
+{
+	criteria ColdConvo_Feelings IsBiker    
+	Response ColdConvo_B3
+}

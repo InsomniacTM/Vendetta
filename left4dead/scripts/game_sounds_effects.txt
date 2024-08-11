@@ -1,0 +1,216 @@
+"Custom.bitchimgay"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"player\survivor\voice\effects\bitchimgay.wav"
+}
+
+"Custom.bruh"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"player\survivor\voice\effects\bruh.wav"
+}
+
+"Custom.bullseye"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"player\survivor\voice\effects\bullseye.wav"
+}
+
+"Custom.datlaugh"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"player\survivor\voice\effects\datlaugh.wav"
+}
+
+"Custom.gay"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"player\survivor\voice\effects\gay.wav"
+}
+
+"Custom.goatscream"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"player\survivor\voice\effects\goatscream.wav"
+}
+
+"Custom.godlike"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"player\survivor\voice\effects\godlike.wav"
+}
+
+"Custom.gotchabitch"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"player\survivor\voice\effects\gotchabitch.wav"
+}
+
+"Custom.hellooo"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"player\survivor\voice\effects\hellooo.wav"
+}
+
+"Custom.holyshit"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"player\survivor\voice\effects\holyshit.wav"
+}
+
+"Custom.laugh"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"player\survivor\voice\effects\laugh.wav"
+}
+
+"Custom.megakill"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"player\survivor\voice\effects\megakill.wav"
+}
+
+"Custom.moaning"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"player\survivor\voice\effects\moaning.wav"
+}
+
+"Custom.monsterkill"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"player\survivor\voice\effects\monsterkill.wav"
+}
+
+"Custom.nigga"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"player\survivor\voice\effects\nigga.wav"
+}
+
+"Custom.skeeted"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"player\survivor\voice\effects\skeeted.wav"
+}
+
+"Custom.sup"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"player\survivor\voice\effects\sup.wav"
+}
+
+"Custom.taaank"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"player\survivor\voice\effects\taaank.wav"
+}
+
+"Custom.unstoppable"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"player\survivor\voice\effects\unstoppable.wav"
+}
+
+"Custom.what"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_150dB"
+	"wave"			"player\survivor\voice\effects\what.wav"
+}
+
+
+"Custom.welcome"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_150dB"
+	"wave"			"player\survivor\voice\effects\welcome.wav"
+}
+
+"Custom.wilhelmscream"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_150dB"
+	"wave"			"player\survivor\voice\effects\wilhelmscream.wav"
+}
+
+"Custom.woohoo"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_150dB"
+	"wave"			"player\survivor\voice\effects\woohoo.wav"
+}
+
+"Custom.yeehaw"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.00"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_150dB"
+	"wave"			"player\survivor\voice\effects\yeehaw.wav"
+}
